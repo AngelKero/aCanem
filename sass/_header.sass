@@ -1,0 +1,85 @@
+body
+    header
+        background: $color-3-hex
+        .navigation
+            box-shadow: 0 0 5px 1px $color-5-rgba
+            padding: 8px 20px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            .logo
+                a
+                    text-decoration: none
+                    display: flex
+                    flex-direction: row
+                    img
+                        height: 40px
+                    .letters-logo
+                        margin-left: 10px
+                        display: flex
+                        flex-direction: column
+                        h1
+                            margin: 0
+                            color: $color-2-hex
+                            padding: 0
+                            font-family: 'Stardos Stencil', cursive
+                            font-weight: 300
+                        h2
+                            margin: 0
+                            padding: 0
+                            color: $color-1-hex
+                            text-align: right
+                            font-size: 14px
+                            margin-top: -5px
+                            font-weight: 300
+            .buscador
+                background: white
+                border-radius: 3px
+                overflow: hidden
+                border: 1px solid black
+                input[type="search"]
+                    font-family: 'Roboto', sans-serif
+                    font-size: 16px
+                    font-weight: 400
+                    padding: 4px 14px
+                    width: 450px
+                    float: left
+                    border: none
+                    border-right: 1px solid black
+                .search-icon
+                    float: left
+                    margin-top: 4px
+                    padding: 0 7px
+                    a
+                        font-size: 18px
+                        color: $color-2-hex
+            .buttons-navigation
+                margin: 0
+                margin-bottom: -4px
+                list-style: none
+                display: flex
+                flex-direction: row
+                li
+                    margin-left: 30px
+                    a
+                        text-decoration: none
+                        display: flex
+                        flex-direction: column
+                        .icon-button
+                            margin: 0
+                            padding: 0
+                            font-size: 18px
+                            color: $color-4-hex
+                            text-align: center
+                        .text-button
+                            margin: 0
+                            margin-top: 7px
+                            color: $color-2-hex
+                            font-size: 12px
+                            letter-spacing: 1px
+                            text-align: center
+                            font-family: 'Roboto', sans-serif
+                            font-weight: 550
+                    &:hover .text-button
+                        text-decoration: underline

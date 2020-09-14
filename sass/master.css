@@ -1,0 +1,167 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+*::-moz-selection {
+  background: #A67291;
+  color: #9DC6C9;
+}
+*::selection {
+  background: #A67291;
+  color: #9DC6C9;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+body header {
+  background: #9DC6C9;
+}
+
+body header .navigation {
+  -webkit-box-shadow: 0 0 5px 1px #6aa899;
+          box-shadow: 0 0 5px 1px #6aa899;
+  padding: 8px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .navigation .logo a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header .navigation .logo a img {
+  height: 40px;
+}
+
+body header .navigation .logo a .letters-logo {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .navigation .logo a .letters-logo h1 {
+  margin: 0;
+  color: #A67291;
+  padding: 0;
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: 300;
+}
+
+body header .navigation .logo a .letters-logo h2 {
+  margin: 0;
+  padding: 0;
+  color: #D98292;
+  text-align: right;
+  font-size: 14px;
+  margin-top: -5px;
+  font-weight: 300;
+}
+
+body header .navigation .buscador {
+  background: white;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+body header .navigation .buscador input[type="search"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 14px;
+  width: 450px;
+  float: left;
+  border: none;
+  border-right: 1px solid black;
+}
+
+body header .navigation .buscador .search-icon {
+  float: left;
+  margin-top: 4px;
+  padding: 0 7px;
+}
+
+body header .navigation .buscador .search-icon a {
+  font-size: 18px;
+  color: #A67291;
+}
+
+body header .navigation .buttons-navigation {
+  margin: 0;
+  margin-bottom: -4px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header .navigation .buttons-navigation li {
+  margin-left: 30px;
+}
+
+body header .navigation .buttons-navigation li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .navigation .buttons-navigation li a .icon-button {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #3E8C8C;
+  text-align: center;
+}
+
+body header .navigation .buttons-navigation li a .text-button {
+  margin: 0;
+  margin-top: 7px;
+  color: #A67291;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 550;
+}
+
+body header .navigation .buttons-navigation li:hover .text-button {
+  text-decoration: underline;
+}
+
+body main .info {
+  background: #3E8C8C;
+}
+/*# sourceMappingURL=master.css.map */
