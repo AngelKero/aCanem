@@ -1,0 +1,170 @@
+body
+    main
+        .main-of-page
+            position: absolute
+            left: 360px
+            top: 90px
+            .articles
+                font-family: 'Roboto', sans-serif
+                width: 75%
+                margin: auto
+                *
+                    margin: 0
+                    padding: 0
+                .group-articles
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    .type-sharing,.type-adopt
+                        overflow: hidden
+                        position: relative
+                        align-self: baseline
+                        min-height: 100%
+                        margin-bottom: 30px
+                        background: white
+                        border-radius: 7px
+                        box-shadow: 0 0 10px 2px #2929298e
+                    .article-about-sharing,.article-about-adopt
+                            width: 100%
+                            display: flex
+                            flex: auto
+                            flex-wrap: nowrap
+                            justify-content: space-between
+                            .user-time,.buttons-comment-love
+                                padding: 0
+                                margin: 0
+                                width: 50%
+                                list-style: none
+                                display: flex
+                                flex-wrap: nowrap
+                                justify-content: space-between
+                                align-content: center
+                                padding: 7px 10px
+                                font-size: 15px
+                            .user-time
+                                background: $color-6-hex
+                                p
+                                    margin-top: 5px
+                                    text-decoration: underline
+                                    &:hover
+                                        cursor: pointer
+                                .user-info-article
+                                    display: flex
+                                    justify-content: left
+                                    align-content: center
+                                    .image-profile
+                                        margin-right: 7px
+                                        width: 25px
+                                        overflow: hidden
+                                        border-radius: 50%
+                                        img
+                                            width: 100%
+                            .buttons-comment-love
+                                background: $color-7-hex
+                                font-size: 20px
+                                p
+                                    margin-top: 3px
+                                    transition: all .3s ease
+                                    &:hover
+                                        transform: scale(1.1)
+                                        cursor: pointer
+                    .type-sharing
+                        width: 100%
+                        .article-sharing-content-view
+                            width: 100%
+                            display: flex
+                            .article-sharing-text,.image-article-sharing
+                                width: 50%
+                                padding: 10px 20px
+                            .article-sharing-text
+                                .title-article
+                                    font-family: 'Roboto Slab', serif
+                                    margin-bottom: 10px
+                                > p
+                                    font-size: 14px
+                                    text-align: justify
+                            .image-article-sharing
+                                height: 100%
+                                img
+                                    margin: auto
+                                    border-radius: 7px
+                                    width: 100%
+                                    max-height: 300px
+                    .type-adopt
+                        width: 47%
+                        .article-about-adopt
+                            width: 100%
+                            flex-wrap: wrap
+                            .user-time,.buttons-comment-love
+                                width: 100%
+                            .buttons-comment-love
+                                padding: 7px 25px
+                        .article-adop-content-view
+                            display: flex
+                            width: 100%
+                            .about-pet, .image-reasons
+                                width: 50%
+                            .about-pet
+                                background: $color-9-hex
+                                color: white
+                                padding: 10px
+                                .name-pet
+                                    font-family: 'Roboto Slab', serif
+                                    text-align: center
+                                    font-size: 16px
+                                    margin-bottom: 7px
+                                .about-pet
+                                    margin: 0
+                                    padding: 0
+                                    width: 100%
+                                    line-height: 16px
+                                    font-size: 12px
+                                    font-family: 'Roboto', serif
+                            .image-reasons
+                                .image-pet
+                                    img
+                                        width: 100%
+                                .reasons
+                                    padding: 10px
+                                    h5
+                                        font-family: 'Roboto Slab', serif
+                                        font-size: 16px
+                                        margin-bottom: 7px
+                                    p
+                                        margin: 0
+                                        padding: 0
+                                        line-height: 16px
+                                        font-size: 12px
+                                        font-family: 'Roboto', serif
+                        .state-pet
+                            padding: 8px 0px
+                            background: $color-6-hex
+                            h6
+                                font-size: 20px
+                                text-align: center
+                        .get-pet
+                            border: 2px solid $color-10-hex
+                            border-bottom-left-radius: 7px
+                            border-bottom-right-radius: 7px
+                            overflow: hidden
+                            a
+                                transition: all .3s ease
+                                padding: 12px 16px
+                                background: $color-10-hex
+                                display: block
+                                text-align: center
+                                text-decoration: none
+                                color: white
+                                font-size: 24px
+                                font-weight: 500
+                                font-family: 'Roboto', serif
+                                i
+                                    color: $color-4-hex
+                            &:hover
+                                border: 2px solid $color-4-hex 
+                                a
+                                    background: $color-3-hex
+                                    display: block
+                                    text-decoration: underline
+                                    color: $color-2-hex

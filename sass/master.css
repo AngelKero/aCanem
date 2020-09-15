@@ -11,7 +11,11 @@
 }
 
 body {
-  background: #f7f7f7;
+  background: #f0f0f0;
+}
+
+img {
+  vertical-align: top;
 }
 
 body header {
@@ -118,6 +122,7 @@ body header .navigation .buscador .search-icon a {
 body header .navigation .buttons-navigation {
   margin: 0;
   margin-bottom: -4px;
+  margin-right: 15px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,12 +171,15 @@ body header .navigation .buttons-navigation li:hover .text-button {
   text-decoration: underline;
 }
 
+body main {
+  overflow: hidden;
+}
+
 body main .info {
   overflow: scroll;
-  display: auto;
+  position: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: fixed;
   height: 100vh;
   z-index: 1;
   width: 350px;
@@ -253,10 +261,10 @@ body main .info .info-user .user-stadistics {
 }
 
 body main .info .info-user .user-stadistics p {
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 body main .info .info-user .user-stadistics p span {
@@ -302,5 +310,292 @@ body main .info .info-user .user-level-info > a {
 
 body main .info .info-user .user-level-info > a:hover {
   text-decoration: underline;
+}
+
+body main .main-of-page {
+  position: absolute;
+  left: 360px;
+  top: 90px;
+}
+
+body main .main-of-page .articles {
+  font-family: 'Roboto', sans-serif;
+  width: 75%;
+  margin: auto;
+}
+
+body main .main-of-page .articles * {
+  margin: 0;
+  padding: 0;
+}
+
+body main .main-of-page .articles .group-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing, body main .main-of-page .articles .group-articles .type-adopt {
+  overflow: hidden;
+  position: relative;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  min-height: 100%;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 10px 2px #2929298e;
+          box-shadow: 0 0 10px 2px #2929298e;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing, body main .main-of-page .articles .group-articles .article-about-adopt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time, body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .user-time, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 7px 10px;
+  font-size: 15px;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time, body main .main-of-page .articles .group-articles .article-about-adopt .user-time {
+  background: #969696;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time p, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p {
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time p:hover, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p:hover {
+  cursor: pointer;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article .image-profile, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article .image-profile {
+  margin-right: 7px;
+  width: 25px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article .image-profile img, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article .image-profile img {
+  width: 100%;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
+  background: #d1d1d1;
+  font-size: 20px;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love p, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love p {
+  margin-top: 3px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love p:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love p:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing {
+  width: 100%;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 10px;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text > p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
+  height: 100%;
+}
+
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing img {
+  margin: auto;
+  border-radius: 7px;
+  width: 100%;
+  max-height: 300px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt {
+  width: 47%;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .user-time, body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .buttons-comment-love {
+  width: 100%;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .buttons-comment-love {
+  padding: 7px 25px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet, body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons {
+  width: 50%;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet {
+  background: #2e2e2e;
+  color: white;
+  padding: 10px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet .name-pet {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet .about-pet {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 16px;
+  font-size: 12px;
+  font-family: 'Roboto', serif;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .image-pet img {
+  width: 100%;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons {
+  padding: 10px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons h5 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons p {
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+  font-size: 12px;
+  font-family: 'Roboto', serif;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .state-pet {
+  padding: 8px 0px;
+  background: #969696;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .state-pet h6 {
+  font-size: 20px;
+  text-align: center;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .get-pet {
+  border: 2px solid #b61a3c;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  overflow: hidden;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .get-pet a {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 12px 16px;
+  background: #b61a3c;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', serif;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .get-pet a i {
+  color: #3E8C8C;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover {
+  border: 2px solid #3E8C8C;
+}
+
+body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
+  background: #9DC6C9;
+  display: block;
+  text-decoration: underline;
+  color: #A67291;
 }
 /*# sourceMappingURL=master.css.map */
