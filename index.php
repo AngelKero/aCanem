@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="resourses/favicon.svg" type="image/x-icon">
     <title>aCanem | Comparte y adopta Mascotas</title>
     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;700&family=Stardos+Stencil&display=swap" rel="stylesheet">
     <!-- Fontasome -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
@@ -115,7 +116,7 @@
                         </div>
                         <div class="article-sharing-content-view">
                             <div class="article-sharing-text">
-                                <h2 class="title-article">Titulo del articulo</h2>
+                                <h2 class="title-article">Pequeñas guias de paseo</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas accusantium quis ratione ducimus? Velit ratione quae consequatur, sequi sunt delectus eveniet id repudiandae in necessitatibus eius optio perferendis ullam ex sint quaerat quis odit voluptatibus fugit. Nesciunt ullam ad modi alias totam adipisci exercitationem officia doloremque ducimus! Fugiat tempore sit, aspernatur consequuntur vitae laudantium dolores quo culpa suscipit voluptates sed, maxime exercitationem modi illo temporibus aliquid perferendis magnam minus earum accusamus, nihil corrupti mollitia. Reprehenderit iure et voluptatibus natus, odio aut. Eligendi reiciendis numquam praesentium, omnis enim quis, nostrum tenetur provident aperiam doloremque ipsa voluptate minus, explicabo maiores sapiente!</p>
                             </div>
                             <div class="image-article-sharing">
@@ -130,10 +131,10 @@
                                     <div class="image-profile">
                                         <img src="img/profile/profile1.png" alt="" width="40">
                                     </div>
-                                    <p class="user-name">Nombre de usuario</p>
+                                    <p class="user-name">Agustin</p>
                                 </li>
                                 <li class="article-time">
-                                    <p>Hace <span>2</span> horas</p>
+                                    <p>Hace <span>7</span> horas</p>
                                 </li>
                             </ul>
                             <ul class="buttons-comment-love">
@@ -143,7 +144,7 @@
                         </div>
                         <div class="article-adop-content-view">
                             <div class="about-pet">
-                                <h4 class="name-pet">Nombre</h4>
+                                <h4 class="name-pet">Dogger 3000</h4>
                                 <p class="about-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita, optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
                             </div>
                             <div class="image-reasons">
@@ -151,13 +152,10 @@
                                     <img src="img/articles/pet1.jpg" alt="">
                                 </div>
                                 <div class="reasons">
-                                    <h5>En adopcion por:</h5>
+                                    <h5>En adopcion: </h5>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="state-pet">
-                            <h6>Estado: <span>Calle</span></h6>
                         </div>
                         <div class="get-pet">
                             <a href="views/pet.html"><i class="far fa-handshake"></i> Hazlo mio!!</a>
@@ -170,10 +168,10 @@
                                     <div class="image-profile">
                                         <img src="img/profile/profile1.png" alt="" width="40">
                                     </div>
-                                    <p class="user-name">Nombre de usuario</p>
+                                    <p class="user-name">Sherk</p>
                                 </li>
                                 <li class="article-time">
-                                    <p>Hace <span>2</span> horas</p>
+                                    <p>Hace <span>4</span> dias</p>
                                 </li>
                             </ul>
                             <ul class="buttons-comment-love">
@@ -183,7 +181,7 @@
                         </div>
                         <div class="article-adop-content-view">
                             <div class="about-pet">
-                                <h4 class="name-pet">Nombre</h4>
+                                <h4 class="name-pet">Michufa</h4>
                                 <p class="about-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita, optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
                             </div>
                             <div class="image-reasons">
@@ -195,9 +193,6 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="state-pet">
-                            <h6>Estado: <span>Calle</span></h6>
                         </div>
                         <div class="get-pet">
                             <a href="views/pet.html"><i class="far fa-handshake"></i> Hazlo mio!!</a>
@@ -212,10 +207,10 @@
                                     <div class="image-profile">
                                         <img src="img/profile/profile1.png" alt="" width="40">
                                     </div>
-                                    <p class="user-name">Don peludo</p>
+                                    <p class="user-name">Shinji</p>
                                 </li>
                                 <li class="article-time">
-                                    <p>Hace <span>2</span> horas</p>
+                                    <p>Hace <span>6</span> horas</p>
                                 </li>
                             </ul>
                             <ul class="buttons-comment-love">
@@ -225,7 +220,7 @@
                         </div>
                         <div class="article-sharing-content-view">
                             <div class="article-sharing-text">
-                                <h2 class="title-article">Titulo del articulo</h2>
+                                <h2 class="title-article">Que no hacer con tu gato</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel voluptas accusantium quis ratione ducimus? Velit ratione quae consequatur, sequi sunt delectus eveniet id repudiandae in necessitatibus eius optio perferendis ullam ex sint quaerat quis odit voluptatibus fugit. Nesciunt ullam ad modi alias totam adipisci exercitationem officia doloremque ducimus! Fugiat tempore sit, aspernatur consequuntur vitae laudantium dolores quo culpa suscipit voluptates sed, maxime exercitationem modi illo temporibus aliquid perferendis magnam minus earum accusamus, nihil corrupti mollitia. Reprehenderit iure et voluptatibus natus, odio aut. Eligendi reiciendis numquam praesentium, omnis enim quis, nostrum tenetur provident aperiam doloremque ipsa voluptate minus, explicabo maiores sapiente!</p>
                             </div>
                             <div class="image-article-sharing">
@@ -240,10 +235,10 @@
                                     <div class="image-profile">
                                         <img src="img/profile/profile1.png" alt="" width="40">
                                     </div>
-                                    <p class="user-name">Nombre de usuario</p>
+                                    <p class="user-name">Akko</p>
                                 </li>
                                 <li class="article-time">
-                                    <p>Hace <span>2</span> horas</p>
+                                    <p>Hace <span>10</span> dias</p>
                                 </li>
                             </ul>
                             <ul class="buttons-comment-love">
@@ -253,7 +248,7 @@
                         </div>
                         <div class="article-adop-content-view">
                             <div class="about-pet">
-                                <h4 class="name-pet">Nombre</h4>
+                                <h4 class="name-pet">Canelita</h4>
                                 <p class="about-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita, optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
                             </div>
                             <div class="image-reasons">
@@ -266,9 +261,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="state-pet">
-                            <h6>Estado: <span>Calle</span></h6>
-                        </div>
                         <div class="get-pet">
                             <a href="views/pet.html"><i class="far fa-handshake"></i> Hazlo mio!!</a>
                         </div>
@@ -280,10 +272,10 @@
                                     <div class="image-profile">
                                         <img src="img/profile/profile1.png" alt="" width="40">
                                     </div>
-                                    <p class="user-name">Nombre de usuario</p>
+                                    <p class="user-name">Mcglobin</p>
                                 </li>
                                 <li class="article-time">
-                                    <p>Hace <span>2</span> horas</p>
+                                    <p>Hace <span>14</span> dias</p>
                                 </li>
                             </ul>
                             <ul class="buttons-comment-love">
@@ -293,7 +285,7 @@
                         </div>
                         <div class="article-adop-content-view">
                             <div class="about-pet">
-                                <h4 class="name-pet">Nombre</h4>
+                                <h4 class="name-pet">treacherous</h4>
                                 <p class="about-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita, optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
                             </div>
                             <div class="image-reasons">
@@ -305,9 +297,6 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="state-pet">
-                            <h6>Estado: <span>Calle</span></h6>
                         </div>
                         <div class="get-pet">
                             <a href="views/pet.html"><i class="far fa-handshake"></i> Hazlo mio!!</a>

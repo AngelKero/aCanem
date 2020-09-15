@@ -76,7 +76,7 @@ body header .navigation .logo a .letters-logo h1 {
   margin: 0;
   color: #A67291;
   padding: 0;
-  font-family: 'Stardos Stencil', cursive;
+  font-family: "Stardos Stencil", cursive;
   font-weight: 300;
 }
 
@@ -98,7 +98,7 @@ body header .navigation .buscador {
 }
 
 body header .navigation .buscador input[type="search"] {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-weight: 400;
   padding: 4px 14px;
@@ -163,7 +163,7 @@ body header .navigation .buttons-navigation li a .text-button {
   font-size: 12px;
   letter-spacing: 1px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 550;
 }
 
@@ -195,8 +195,8 @@ body main .info .settings-user {
   text-align: right;
   font-size: 16px;
   text-decoration: none;
-  color: white;
-  font-family: 'Roboto', sans-serif;
+  color: #f0f0f0;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body main .info .settings-user:hover {
@@ -244,14 +244,14 @@ body main .info .info-user > h3, body main .info .info-user h4 {
 body main .info .info-user > h3 {
   font-size: 36px;
   font-weight: 500;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 5px;
 }
 
 body main .info .info-user > h4 {
   font-size: 22px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 20px;
   padding-bottom: 12px;
   border-bottom: 3px solid #A67291;
@@ -262,8 +262,8 @@ body main .info .info-user .user-stadistics {
 }
 
 body main .info .info-user .user-stadistics p {
-  color: black;
-  font-family: 'Roboto', sans-serif;
+  color: #2e2e2e;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -273,7 +273,7 @@ body main .info .info-user .user-stadistics p span {
 }
 
 body main .info .info-user .user-level-info {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body main .info .info-user .user-level-info .level {
@@ -306,7 +306,7 @@ body main .info .info-user .user-level-info > a {
   text-align: center;
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: #f0f0f0;
 }
 
 body main .info .info-user .user-level-info > a:hover {
@@ -320,7 +320,7 @@ body main .main-of-page {
 }
 
 body main .main-of-page .articles {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   width: 75%;
   margin: auto;
 }
@@ -354,8 +354,8 @@ body main .main-of-page .articles .group-articles .type-sharing, body main .main
   margin-bottom: 30px;
   background: white;
   border-radius: 7px;
-  -webkit-box-shadow: 0 0 10px 2px #2929298e;
-          box-shadow: 0 0 10px 2px #2929298e;
+  -webkit-box-shadow: 0 0 10px 2px #2e2e2e;
+          box-shadow: 0 0 10px 2px #2e2e2e;
 }
 
 body main .main-of-page .articles .group-articles .article-about-sharing, body main .main-of-page .articles .group-articles .article-about-adopt {
@@ -397,6 +397,7 @@ body main .main-of-page .articles .group-articles .article-about-sharing .user-t
 }
 
 body main .main-of-page .articles .group-articles .article-about-sharing .user-time p, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p {
+  color: #f0f0f0;
   margin-top: 5px;
   text-decoration: underline;
   -webkit-transition: all .3s ease;
@@ -477,13 +478,17 @@ body main .main-of-page .articles .group-articles .type-sharing .article-sharing
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
-  font-family: 'Roboto Slab', serif;
+  color: #2e2e2e;
+  font-family: "Roboto Slab", serif;
   margin-bottom: 10px;
 }
 
-body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text > p {
+body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text p {
+  color: #2e2e2e;
   font-size: 14px;
-  text-align: justify;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: left;
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
@@ -528,12 +533,12 @@ body main .main-of-page .articles .group-articles .type-adopt .article-adop-cont
 
 body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet {
   background: #2e2e2e;
-  color: white;
+  color: #f0f0f0;
   padding: 10px;
 }
 
 body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet .name-pet {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   text-align: center;
   font-size: 16px;
   margin-bottom: 7px;
@@ -543,9 +548,10 @@ body main .main-of-page .articles .group-articles .type-adopt .article-adop-cont
   margin: 0;
   padding: 0;
   width: 100%;
-  line-height: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
   font-size: 12px;
-  font-family: 'Roboto', serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .image-pet img {
@@ -554,10 +560,11 @@ body main .main-of-page .articles .group-articles .type-adopt .article-adop-cont
 
 body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons {
   padding: 10px;
+  color: #2e2e2e;
 }
 
 body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons h5 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   margin-bottom: 7px;
 }
@@ -566,8 +573,9 @@ body main .main-of-page .articles .group-articles .type-adopt .article-adop-cont
   margin: 0;
   padding: 0;
   line-height: 16px;
+  letter-spacing: 1px;
   font-size: 12px;
-  font-family: 'Roboto', serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body main .main-of-page .articles .group-articles .type-adopt .state-pet {
@@ -577,6 +585,7 @@ body main .main-of-page .articles .group-articles .type-adopt .state-pet {
 
 body main .main-of-page .articles .group-articles .type-adopt .state-pet h6 {
   font-size: 20px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -598,7 +607,7 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet a {
   color: white;
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Roboto', serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body main .main-of-page .articles .group-articles .type-adopt .get-pet a i {
