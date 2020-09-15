@@ -159,7 +159,7 @@ body header .navigation .buttons-navigation li a .icon-button {
 body header .navigation .buttons-navigation li a .text-button {
   margin: 0;
   margin-top: 7px;
-  color: #A67291;
+  color: #2e2e2e;
   font-size: 12px;
   letter-spacing: 1px;
   text-align: center;
@@ -183,7 +183,7 @@ body main .info {
   height: 100vh;
   z-index: 1;
   width: 350px;
-  background: #3E8C8C;
+  background: #A67291;
   padding: 0 15px;
   padding-top: 70px;
 }
@@ -235,6 +235,7 @@ body main .info .info-user .image-profile img {
 }
 
 body main .info .info-user > h3, body main .info .info-user h4 {
+  color: #2e2e2e;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -263,7 +264,7 @@ body main .info .info-user .user-stadistics {
 body main .info .info-user .user-stadistics p {
   color: black;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -398,9 +399,12 @@ body main .main-of-page .articles .group-articles .article-about-sharing .user-t
 body main .main-of-page .articles .group-articles .article-about-sharing .user-time p, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p {
   margin-top: 5px;
   text-decoration: underline;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 body main .main-of-page .articles .group-articles .article-about-sharing .user-time p:hover, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p:hover {
+  color: #3E8C8C;
   cursor: pointer;
 }
 
@@ -429,6 +433,19 @@ body main .main-of-page .articles .group-articles .article-about-sharing .user-t
 body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
   background: #d1d1d1;
   font-size: 20px;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-love, body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-comment, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-love, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-comment {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-love:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-love:hover {
+  color: #b61a3c;
+}
+
+body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-comment:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-comment:hover {
+  color: #6AA899;
 }
 
 body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love p, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love p {

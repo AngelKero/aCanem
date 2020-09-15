@@ -45,9 +45,12 @@ body
                             .user-time
                                 background: $color-6-hex
                                 p
+                                    color: $color-8-hex
                                     margin-top: 5px
                                     text-decoration: underline
+                                    transition: all .3s ease
                                     &:hover
+                                        color: $color-4-hex
                                         cursor: pointer
                                 .user-info-article
                                     display: flex
@@ -63,6 +66,14 @@ body
                             .buttons-comment-love
                                 background: $color-7-hex
                                 font-size: 20px
+                                .icon-love, .icon-comment
+                                    transition: all .3s ease
+                                .icon-love
+                                    &:hover
+                                        color: $color-10-hex
+                                .icon-comment
+                                    &:hover
+                                        color: $color-5-hex
                                 p
                                     margin-top: 3px
                                     transition: all .3s ease
@@ -79,9 +90,11 @@ body
                                 padding: 10px 20px
                             .article-sharing-text
                                 .title-article
+                                    color: $color-9-hex
                                     font-family: 'Roboto Slab', serif
                                     margin-bottom: 10px
                                 > p
+                                    color: $color-9-hex
                                     font-size: 14px
                                     text-align: justify
                             .image-article-sharing
@@ -107,7 +120,7 @@ body
                                 width: 50%
                             .about-pet
                                 background: $color-9-hex
-                                color: white
+                                color: $color-8-hex
                                 padding: 10px
                                 .name-pet
                                     font-family: 'Roboto Slab', serif
@@ -127,6 +140,7 @@ body
                                         width: 100%
                                 .reasons
                                     padding: 10px
+                                    color: $color-9-hex
                                     h5
                                         font-family: 'Roboto Slab', serif
                                         font-size: 16px
