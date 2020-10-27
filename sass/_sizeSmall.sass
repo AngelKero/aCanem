@@ -1,0 +1,32 @@
+@media screen and ( max-width: 768px )
+    body
+        header
+            .navigation
+                display: flex
+                flex-direction: column
+                .buscador
+                    input[type="search"]
+                        width: 80%
+        main
+            .main-of-page
+                .articles
+                    width: 90%
+                    .group-articles
+                        .article-about-sharing,.article-about-adopt
+                                width: 100%
+                                flex-wrap: wrap
+                                .user-time,.buttons-comment-love
+                                    width: 100% !important
+                        .type-sharing
+                            max-height: 600px
+                            .article-sharing-content-view
+                                flex-direction: column
+                                .article-sharing-text,.image-article-sharing
+                                    overflow: hidden !important
+                                    width: 100% !important
+                                    padding: 10px
+                                    max-height: 250px
+                                    img
+                                        height: 100%
+                        .type-adopt
+                            width: 100%
