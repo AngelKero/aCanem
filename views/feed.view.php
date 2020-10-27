@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php include_once "head.view.php"; ?>
+
 <body>
     <?php include_once "header.view.php" ?>
     <main>
@@ -12,7 +13,7 @@
             </div>
             <div class="articles">
                 <div class="group-articles">
-                    <article class="type-sharing">
+                    <article class="type-sharing" data-aos="fade-left">
                         <div class="article-about-sharing">
                             <ul class="user-time">
                                 <li class="user-info-article">
@@ -53,7 +54,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="type-adopt">
+                    <article class="type-adopt" data-aos="fade-left">
                         <div class="article-about-adopt">
                             <ul class="user-time">
                                 <li class="user-info-article">
@@ -97,7 +98,7 @@
                             <a href="pet.php"><i class="far fa-handshake"></i> Hazlo mio!!</a>
                         </div>
                     </article>
-                    <article class="type-adopt">
+                    <article class="type-adopt" data-aos="fade-left">
                         <div class="article-about-adopt">
                             <ul class="user-time">
                                 <li class="user-info-article">
@@ -146,6 +147,11 @@
         </section>
     </main>
     <?php include_once "navegacionMovil.view.php"; ?>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
