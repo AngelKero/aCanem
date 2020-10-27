@@ -678,8 +678,18 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body header .navigation .logo a img {
+    height: 35px;
+  }
+  body header .navigation .logo a .letters-logo h2 {
+    display: none !important;
+  }
+  body header .navigation .buscador {
+    margin-top: 7px;
+  }
   body header .navigation .buscador input[type="search"] {
     width: 80%;
+    padding: 1px 7px;
   }
   body main .main-of-page .articles {
     width: 90%;
