@@ -48,6 +48,10 @@ img {
           flex-direction: column;
 }
 
+.buttons-navigation li a:hover .icon-button {
+  color: #A67291;
+}
+
 .buttons-navigation li a .icon-button {
   margin: 0;
   padding: 0;
@@ -56,9 +60,9 @@ img {
   text-align: center;
 }
 
-.buttons-navigation li a .icon-button .text-button {
+.buttons-navigation li a .text-button {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 3px;
   color: #2e2e2e;
   font-size: 12px;
   letter-spacing: 1px;
@@ -67,7 +71,7 @@ img {
   font-weight: 550;
 }
 
-.buttons-navigation li a .icon-button .text-button:hover .text-button {
+.buttons-navigation li a .text-button:hover .text-button {
   text-decoration: underline;
 }
 
