@@ -18,6 +18,63 @@ img {
   vertical-align: top;
 }
 
+.buttons-navigation {
+  background: #9DC6C9;
+  margin: 0;
+  margin-bottom: -4px;
+  margin-right: 15px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.buttons-navigation li {
+  margin-left: 30px;
+}
+
+.buttons-navigation li a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttons-navigation li a .icon-button {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #3E8C8C;
+  text-align: center;
+}
+
+.buttons-navigation li a .icon-button .text-button {
+  margin: 0;
+  margin-top: 7px;
+  color: #2e2e2e;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 550;
+}
+
+.buttons-navigation li a .icon-button .text-button:hover .text-button {
+  text-decoration: underline;
+}
+
+.navegacion-movil > .buttons-navigation {
+  display: none;
+}
+
 body header {
   position: fixed;
   top: 0;
@@ -117,58 +174,6 @@ body header .navigation .buscador .search-icon {
 body header .navigation .buscador .search-icon a {
   font-size: 18px;
   color: #A67291;
-}
-
-body header .navigation .buttons-navigation {
-  margin: 0;
-  margin-bottom: -4px;
-  margin-right: 15px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body header .navigation .buttons-navigation li {
-  margin-left: 30px;
-}
-
-body header .navigation .buttons-navigation li a {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body header .navigation .buttons-navigation li a .icon-button {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  color: #3E8C8C;
-  text-align: center;
-}
-
-body header .navigation .buttons-navigation li a .text-button {
-  margin: 0;
-  margin-top: 7px;
-  color: #2e2e2e;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 550;
-}
-
-body header .navigation .buttons-navigation li:hover .text-button {
-  text-decoration: underline;
 }
 
 body main {
@@ -653,6 +658,40 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    margin-bottom: 80px;
+  }
+  .navegacion-movil > .buttons-navigation {
+    padding-left: 0px !important;
+    border-top: 3px solid #A67291;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .navegacion-movil > .buttons-navigation li {
+    border-bottom: 3px solid #D98292;
+    width: 15%;
+    margin-left: 0px;
+  }
+  .navegacion-movil > .buttons-navigation li a {
+    padding: 10px;
+  }
+  .navegacion-movil > .buttons-navigation li a .icon-button {
+    font-size: 25px;
+    color: #3E8C8C;
+  }
+  .navegacion-movil > .buttons-navigation li a .text-button {
+    display: none;
+  }
   header .navigation {
     -ms-flex-pack: distribute !important;
         justify-content: space-around !important;

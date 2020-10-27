@@ -15,6 +15,31 @@
                     width: 85%
 
 @media screen and ( max-width: 1000px )
+    body
+        margin-bottom: 80px
+    .navegacion-movil
+        &>.buttons-navigation
+            padding-left: 0px !important
+            border-top: 3px solid $color-2-hex
+            position: fixed
+            bottom: 0px
+            left: 0px
+            right: 0px
+            width: 100vw
+            display: flex
+            flex-wrap: nowrap
+            justify-content: space-around
+            li
+                border-bottom: 3px solid $color-1-hex
+                width: 15%
+                margin-left: 0px
+                a
+                    padding: 10px
+                    .icon-button
+                        font-size: 25px
+                        color: $color-4-hex
+                    .text-button
+                        display: none
     header
         .navigation
             justify-content: space-around !important
