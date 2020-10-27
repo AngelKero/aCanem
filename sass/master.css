@@ -479,7 +479,7 @@ body main .main-of-page .articles .group-articles .type-sharing .article-sharing
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
@@ -693,7 +693,7 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
     width: 100% !important;
   }
   body main .main-of-page .articles .group-articles .type-sharing {
-    max-height: 600px;
+    max-height: 100%;
   }
   body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
     -webkit-box-orient: vertical;
@@ -703,12 +703,11 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
   }
   body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
     overflow: hidden !important;
-    width: 100% !important;
+    width: 95%;
     padding: 10px;
-    max-height: 250px;
   }
   body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text img, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing img {
-    height: 100%;
+    vertical-align: top;
   }
   body main .main-of-page .articles .group-articles .type-adopt {
     width: 100%;
