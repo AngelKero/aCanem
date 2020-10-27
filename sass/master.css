@@ -60,6 +60,10 @@ img {
   text-align: center;
 }
 
+.buttons-navigation li a .icon-button.active {
+  color: #A67291 !important;
+}
+
 .buttons-navigation li a .text-button {
   margin: 0;
   margin-top: 3px;
@@ -69,10 +73,6 @@ img {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 550;
-}
-
-.buttons-navigation li a .text-button:hover .text-button {
-  text-decoration: underline;
 }
 
 .navegacion-movil > .buttons-navigation {
@@ -687,6 +687,7 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
     margin-left: 0px;
   }
   .navegacion-movil > .buttons-navigation li a {
+    color: #A67291;
     padding: 10px;
   }
   .navegacion-movil > .buttons-navigation li a .icon-button {

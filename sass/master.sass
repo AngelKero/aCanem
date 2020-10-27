@@ -50,17 +50,19 @@ img
     li
         margin-left: 30px
         a
-            &:hover .icon-button
-                color: $color-2-hex
             text-decoration: none
             display: flex
             flex-direction: column
+            &:hover .icon-button
+                color: $color-2-hex
             .icon-button
                 margin: 0
                 padding: 0
                 font-size: 18px
                 color: $color-4-hex
                 text-align: center
+            .icon-button.active
+                color: $color-2-hex !important
             .text-button
                 margin: 0
                 margin-top: 3px
@@ -70,8 +72,6 @@ img
                 text-align: center
                 font-family: $fuente2
                 font-weight: 550
-                &:hover .text-button
-                    text-decoration: underline
 
 .navegacion-movil
     &>.buttons-navigation
