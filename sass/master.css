@@ -767,4 +767,17 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 576px) {
+  body main .main-of-page .articles {
+    width: 100%;
+  }
+  body main .main-of-page .articles .group-articles .type-sharing, body main .main-of-page .articles .group-articles .type-adopt {
+    border-radius: 0px;
+  }
+  body main .main-of-page .articles .group-articles .type-sharing .get-pet, body main .main-of-page .articles .group-articles .type-adopt .get-pet {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
 /*# sourceMappingURL=master.css.map */
