@@ -1355,5 +1355,6 @@ body .pet .container .pet-page {
   border: 5px solid #b61f3f;
   border-top: 5px solid #3E8C8C;
   cursor: pointer;
+  color: black !important;
 }
 /*# sourceMappingURL=master.css.map */
