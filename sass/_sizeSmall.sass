@@ -10,7 +10,7 @@
                             height: 35px
                         .letters-logo
                             h1
-                                8px
+                                font-size: 28px
                             h2
                                 display: none !important
                 .buscador
@@ -19,37 +19,36 @@
                         width: 80%
                         padding: 1px 7px
         main
-            .main-of-page
-                .articles
-                    width: 90%
-                    .group-articles
-                        .article-about-sharing,.article-about-adopt
-                                width: 100%
-                                flex-wrap: wrap
-                                .user-time,.buttons-comment-love
-                                    width: 100% !important
-                        .type-sharing
-                            max-height: 100%
-                            .article-sharing-content-view
-                                flex-direction: column
-                                .article-sharing-text,.image-article-sharing
-                                    overflow: hidden !important
-                                    width: 95%
-                                    padding: 10px
-                                    img
-                                        vertical-align: top
-                        .type-adopt
-                            width: 100%
+            .articles, .container
+                width: 90%
+                .article-about-sharing,.article-about-adopt
+                    width: 100% !important
+                    flex-wrap: wrap !important
+                    .user-time,.buttons-comment-love
+                        width: 100% !important
+                .type-sharing
+                    max-height: 100% !important
+                    .article-sharing-content-view
+                        flex-direction: column !important
+                        .article-sharing-text,.image-article-sharing
+                            overflow: hidden !important
+                            width: 95% !important
+                            padding: 10px
+                .type-adopt
+                    width: 100% !important
+    .image-article-sharing
+        border-radius: 0px !important
+        img
+            border-radius: 0px !important
 
 @media screen and ( max-width: 576px )
-    body
-        main
-            .main-of-page
-                .articles
-                    width: 100%
-                    .group-articles
-                        .type-sharing,.type-adopt
-                            border-radius: 0px
-                            .get-pet
-                                border-bottom-left-radius: 0px
-                                border-bottom-right-radius: 0px
+    .articles, .container
+        width: 100% !important
+        .type-sharing,.type-adopt
+            border-radius: 0px !important
+            .get-pet
+                border-bottom-left-radius: 0px !important
+                border-bottom-right-radius: 0px !important
+    .image-article-sharing
+        img
+            width: 100% !important

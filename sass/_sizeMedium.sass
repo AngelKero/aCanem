@@ -8,10 +8,12 @@
         main
             .info
                 display: none
-            .main-of-page
-                position: static
+            .main-of-page, .container
+                position: static !important
+                margin: auto
                 margin-top: 116px
-                .articles
+                margin-bottom: 30px
+                .articles, .pet-page
                     width: 85%
 
 @media screen and ( max-width: 1000px )
@@ -48,3 +50,6 @@
             .buscador
             .buttons-navigation
                 display: none !important
+
+    .image-contact, .about-pet
+                width: 100% !important

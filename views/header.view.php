@@ -1,7 +1,7 @@
 <header>
     <nav class="navigation">
         <div class="logo">
-            <a href="#">
+            <a href="index.php">
                 <img src="resourses/favicon.svg" alt="logo canem">
                 <div class="letters-logo">
                     <h1>aCanem</h1>

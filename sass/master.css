@@ -305,7 +305,6 @@ body main .info .info-user .user-level-info .icon-level {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: -26px;
   margin-bottom: 15px;
 }
 
@@ -472,7 +471,7 @@ body main .main-of-page .articles .group-articles .article-about-sharing .button
 
 body main .main-of-page .articles .group-articles .type-sharing {
   width: 100%;
-  max-height: 320px;
+  max-height: 400px;
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
@@ -484,7 +483,7 @@ body main .main-of-page .articles .group-articles .type-sharing .article-sharing
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
   width: 50%;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text {
@@ -506,7 +505,6 @@ body main .main-of-page .articles .group-articles .type-sharing .article-sharing
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,8 +515,9 @@ body main .main-of-page .articles .group-articles .type-sharing .article-sharing
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing img {
+  display: inline-block;
+  width: 98%;
   border-radius: 7px;
-  margin: auto;
   max-height: 300px;
 }
 
@@ -645,6 +644,314 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
   color: #A67291;
 }
 
+body .pet * {
+  margin: 0;
+  padding: 0;
+}
+
+body .pet .container {
+  position: absolute;
+  left: 360px;
+  top: 90px;
+}
+
+body .pet .container .type-sharing, body .pet .container .type-adopt {
+  overflow: hidden;
+  position: relative;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  min-height: 100%;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 10px 2px #2e2e2e;
+          box-shadow: 0 0 10px 2px #2e2e2e;
+}
+
+body .pet .container .article-about-sharing, body .pet .container .article-about-adopt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .pet .container .article-about-sharing .user-time, body .pet .container .article-about-sharing .buttons-comment-love, body .pet .container .article-about-adopt .user-time, body .pet .container .article-about-adopt .buttons-comment-love {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 7px 10px;
+  font-size: 15px;
+}
+
+body .pet .container .article-about-sharing .user-time, body .pet .container .article-about-adopt .user-time {
+  background: #969696;
+}
+
+body .pet .container .article-about-sharing .user-time p, body .pet .container .article-about-adopt .user-time p {
+  color: #f0f0f0;
+  margin-top: 5px;
+  text-decoration: underline;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .pet .container .article-about-sharing .user-time p:hover, body .pet .container .article-about-adopt .user-time p:hover {
+  color: #3E8C8C;
+  cursor: pointer;
+}
+
+body .pet .container .article-about-sharing .user-time .user-info-article, body .pet .container .article-about-adopt .user-time .user-info-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .pet .container .article-about-sharing .user-time .user-info-article .image-profile, body .pet .container .article-about-adopt .user-time .user-info-article .image-profile {
+  margin-right: 7px;
+  width: 25px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+body .pet .container .article-about-sharing .user-time .user-info-article .image-profile img, body .pet .container .article-about-adopt .user-time .user-info-article .image-profile img {
+  width: 100%;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love, body .pet .container .article-about-adopt .buttons-comment-love {
+  background: #d1d1d1;
+  font-size: 20px;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love .icon-love, body .pet .container .article-about-sharing .buttons-comment-love .icon-comment, body .pet .container .article-about-adopt .buttons-comment-love .icon-love, body .pet .container .article-about-adopt .buttons-comment-love .icon-comment {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love .icon-love:hover, body .pet .container .article-about-adopt .buttons-comment-love .icon-love:hover {
+  color: #b61f3f;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love .icon-comment:hover, body .pet .container .article-about-adopt .buttons-comment-love .icon-comment:hover {
+  color: #6AA899;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love p, body .pet .container .article-about-adopt .buttons-comment-love p {
+  margin-top: 3px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .pet .container .article-about-sharing .buttons-comment-love p:hover, body .pet .container .article-about-adopt .buttons-comment-love p:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+body .pet .container .type-sharing {
+  width: 100%;
+  max-height: 400px;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text, body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing {
+  width: 50%;
+  padding: 10px;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text {
+  overflow: scroll;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
+  color: #2e2e2e;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 10px;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text p {
+  color: #2e2e2e;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing img {
+  display: inline-block;
+  width: 98%;
+  border-radius: 7px;
+  max-height: 300px;
+}
+
+body .pet .container .type-adopt {
+  width: 100%;
+}
+
+body .pet .container .type-adopt .article-about-adopt {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .pet .container .type-adopt .article-about-adopt .user-time, body .pet .container .type-adopt .article-about-adopt .buttons-comment-love {
+  width: 100%;
+}
+
+body .pet .container .type-adopt .article-about-adopt .buttons-comment-love {
+  padding: 7px 25px;
+}
+
+body .pet .container .type-adopt .article-adop-content-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .about-pet, body .pet .container .type-adopt .article-adop-content-view .image-reasons {
+  width: 50%;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .about-pet {
+  background: #2e2e2e;
+  color: #f0f0f0;
+  padding: 10px;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .about-pet .name-pet {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .about-pet .about-pet {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .image-reasons .image-pet img {
+  width: 100%;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons {
+  padding: 10px;
+  color: #2e2e2e;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons h5 {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons p {
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body .pet .container .type-adopt .state-pet {
+  padding: 8px 0px;
+  background: #969696;
+}
+
+body .pet .container .type-adopt .state-pet h6 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+body .pet .container .type-adopt .get-pet {
+  border: 2px solid #b61f3f;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  overflow: hidden;
+}
+
+body .pet .container .type-adopt .get-pet a {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 12px 16px;
+  background: #b61f3f;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body .pet .container .type-adopt .get-pet a i {
+  color: #3E8C8C;
+}
+
+body .pet .container .type-adopt .get-pet:hover {
+  border: 2px solid #3E8C8C;
+}
+
+body .pet .container .type-adopt .get-pet:hover a {
+  background: #9DC6C9;
+  display: block;
+  text-decoration: underline;
+  color: #A67291;
+}
+
+body .pet .container .pet-page {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 75%;
+  margin: auto;
+}
+
 @media screen and (max-width: 1300px) {
   body header .navigation .buscador input[type="search"] {
     width: 300px;
@@ -652,11 +959,13 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
   body main .info {
     display: none;
   }
-  body main .main-of-page {
-    position: static;
+  body main .main-of-page, body main .container {
+    position: static !important;
+    margin: auto;
     margin-top: 116px;
+    margin-bottom: 30px;
   }
-  body main .main-of-page .articles {
+  body main .main-of-page .articles, body main .main-of-page .pet-page, body main .container .articles, body main .container .pet-page {
     width: 85%;
   }
 }
@@ -704,10 +1013,13 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
   header .navigation .buttons-navigation {
     display: none !important;
   }
+  .image-contact, .about-pet {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 1550px) {
-  body main .main-of-page .articles {
+  .articles, .pet-page {
     width: 90%;
   }
 }
@@ -725,6 +1037,9 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
   body header .navigation .logo a img {
     height: 35px;
   }
+  body header .navigation .logo a .letters-logo h1 {
+    font-size: 28px;
+  }
   body header .navigation .logo a .letters-logo h2 {
     display: none !important;
   }
@@ -735,49 +1050,127 @@ body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
     width: 80%;
     padding: 1px 7px;
   }
-  body main .main-of-page .articles {
+  body main .articles, body main .container {
     width: 90%;
   }
-  body main .main-of-page .articles .group-articles .article-about-sharing, body main .main-of-page .articles .group-articles .article-about-adopt {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  body main .articles .article-about-sharing, body main .articles .article-about-adopt, body main .container .article-about-sharing, body main .container .article-about-adopt {
+    width: 100% !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
-  body main .main-of-page .articles .group-articles .article-about-sharing .user-time, body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .user-time, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
+  body main .articles .article-about-sharing .user-time, body main .articles .article-about-sharing .buttons-comment-love, body main .articles .article-about-adopt .user-time, body main .articles .article-about-adopt .buttons-comment-love, body main .container .article-about-sharing .user-time, body main .container .article-about-sharing .buttons-comment-love, body main .container .article-about-adopt .user-time, body main .container .article-about-adopt .buttons-comment-love {
     width: 100% !important;
   }
-  body main .main-of-page .articles .group-articles .type-sharing {
-    max-height: 100%;
+  body main .articles .type-sharing, body main .container .type-sharing {
+    max-height: 100% !important;
   }
-  body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  body main .articles .type-sharing .article-sharing-content-view, body main .container .type-sharing .article-sharing-content-view {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
-  body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
+  body main .articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .articles .type-sharing .article-sharing-content-view .image-article-sharing, body main .container .type-sharing .article-sharing-content-view .article-sharing-text, body main .container .type-sharing .article-sharing-content-view .image-article-sharing {
     overflow: hidden !important;
-    width: 95%;
+    width: 95% !important;
     padding: 10px;
   }
-  body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text img, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing img {
-    vertical-align: top;
+  body main .articles .type-adopt, body main .container .type-adopt {
+    width: 100% !important;
   }
-  body main .main-of-page .articles .group-articles .type-adopt {
-    width: 100%;
+  .image-article-sharing {
+    border-radius: 0px !important;
+  }
+  .image-article-sharing img {
+    border-radius: 0px !important;
   }
 }
 
 @media screen and (max-width: 576px) {
-  body main .main-of-page .articles {
-    width: 100%;
+  .articles, .container {
+    width: 100% !important;
   }
-  body main .main-of-page .articles .group-articles .type-sharing, body main .main-of-page .articles .group-articles .type-adopt {
-    border-radius: 0px;
+  .articles .type-sharing, .articles .type-adopt, .container .type-sharing, .container .type-adopt {
+    border-radius: 0px !important;
   }
-  body main .main-of-page .articles .group-articles .type-sharing .get-pet, body main .main-of-page .articles .group-articles .type-adopt .get-pet {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+  .articles .type-sharing .get-pet, .articles .type-adopt .get-pet, .container .type-sharing .get-pet, .container .type-adopt .get-pet {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
   }
+  .image-article-sharing img {
+    width: 100% !important;
+  }
+}
+
+.pet .pet-page {
+  margin-bottom: 30px !important;
+}
+
+.pet .pet-page * {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px !important;
+  letter-spacing: 1px;
+}
+
+.pet .pet-page .article-adop-content-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pet .pet-page .article-adop-content-view .image-contact, .pet .pet-page .article-adop-content-view .about-pet {
+  width: 50%;
+}
+
+.pet .pet-page .article-adop-content-view .about-pet .pet-info, .pet .pet-page .article-adop-content-view .about-pet .info-block {
+  line-height: 18px !important;
+  margin-bottom: 14px;
+}
+
+.pet .pet-page .article-adop-content-view .about-pet .pet-info .name-pet, .pet .pet-page .article-adop-content-view .about-pet .info-block .name-pet {
+  text-decoration: underline;
+}
+
+.pet .pet-page .article-adop-content-view h4, .pet .pet-page .article-adop-content-view h5 {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+}
+
+.pet .pet-page .article-adop-content-view .contacto {
+  width: 100%;
+  padding: 10px;
+  background: #9DC6C9;
+  color: black;
+}
+
+.pet .pet-page .article-adop-content-view .image-pet {
+  width: 100%;
+}
+
+.pet .pet-page .article-adop-content-view .image-pet img {
+  width: 100%;
+}
+
+.pet .adopt-form {
+  background: #D98292 !important;
+}
+
+.pet .adopt-form .title-get {
+  padding: 10px;
+  text-align: center;
+  font-size: 22px !important;
+  color: white;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  background: #b61f3f;
+}
+
+.pet .adopt-form .formulario {
+  width: 60%;
+  padding: 10px;
 }
 /*# sourceMappingURL=master.css.map */

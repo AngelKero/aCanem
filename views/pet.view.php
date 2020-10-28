@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <?php include_once "head.view.php"; ?>
+
 <body>
     <?php include_once "header.view.php" ?>
-    <main>
+    <main class="pet">
         <?php include_once "userInfo.view.php"; ?>
-        <section class="main-of-page">
-            <div class="articles">
-                <div class="group-articles">
-                    <article class="type-adopt">
-                        <div class="article-adop-content-view">
-                            <div class="about-pet">
-                                <h4 class="name-pet">Dogger 3000</h4>
-                                <p class="about-pet">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                                    nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita,
-                                    optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
-                            </div>
-                            <div class="image-reasons">
-                                <div class="image-pet">
-                                    <img src="img/articles/pet1.jpg" alt="">
-                                </div>
-                                <div class="reasons">
-                                    <h5>En adopcion: </h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et
-                                        cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
-                                </div>
-                            </div>
+        <div class="container">
+            <article class="pet-page type-adopt">
+                <div class="article-adop-content-view">
+                    <div class="about-pet">
+                        <div class="pet-info">
+                            <h4 class="name-pet">Dogger 3000</h4>
+                            <p class="pet-talk">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                                nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita,
+                                optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
                         </div>
-                        <div class="article-about-adopt">
-                            <ul class="user-time">
-                                <li class="user-info-article">
-                                    <div class="image-profile">
-                                        <img src="img/profile/profile1.png" alt="" width="40">
-                                    </div>
-                                    <p class="user-name">Agustin</p>
-                                </li>
-                                <li class="article-time">
-                                    <p>Hace <span>7</span> horas</p>
-                                </li>
-                            </ul>
-                            <ul class="buttons-comment-love">
-                                <li class="icon-comment">
-                                    <p><i class="far fa-comment-dots"></i></p>
-                                </li>
-                                <li class="icon-love">
-                                    <p><i class="far fa-heart"></i></p>
-                                </li>
-                            </ul>
+                        <div class="reasons info-block">
+                            <h5>En adopcion: </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et
+                                cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
                         </div>
-                    </article>
+                        <div class="reasons info-block">
+                            <h5>Caracteristicas: <i class="fas fa-paw"></i></h5>
+                            <p>
+                                <span style="font-weight: bolder;">Tipo</span> | Canino -- 
+                                <span style="font-weight: bolder;">Raza</span> | Meztiza -- 
+                                <span style="font-weight: bolder;">Peso</span> | 1.3kg -- 
+                                <span style="font-weight: bolder;">Tamaño</span> | Pequeño -- 
+                                <span style="font-weight: bolder;">Edad</span> | 4 años <br><br>
+                                <span style="font-weight: bolder;">Sociable con Perros</span> | Si <br><br>
+                                <span style="font-weight: bolder;">Sociable con Niños</span> | Si <br><br>
+                                <span style="font-weight: bolder;">Nivel de ejercicio</span> | Frecuente - Diario <br>
+                                <br>
+                                <span style="font-weight: bolder;">Energia</span> | Grande <br><br>
+                                <span style="font-weight: bolder;">Espacio Requerido</span> | Mediano <br> <br>
+                                <span style="font-weight: bolder;">Sexo</span> | Macho -- 
+                                <span style="font-weight: bolder;">Esterilizado</span> | No -- 
+                                <span style="font-weight: bolder;">Desparasitado</span> | Si <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-contact">
+                        <div class="image-pet">
+                            <img src="img/articles/pet1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="contacto info-block">
+                        <h5>Mi dueño: <i class="fas fa-user"></i></h5>
+                        <p>
+                            <span style="font-weight: bolder;">Nombre</span> | Don mamerto <br><br>
+                            <span style="font-weight: bolder;">Causa</span> | Ninguna <br><br>
+                            <span style="font-weight: bolder;">Email</span> | don.mamas@outlook.com <br><br>
+                            <span style="font-weight: bolder;">Telefono</span> | 3325094748 <br><br>
+                            <span style="font-weight: bolder;">Facebook</span> | https://www.facebook.com/angeladrian.zaragozarodriguez <br><br>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="article-about-adopt">
+                    <ul class="user-time">
+                        <li class="user-info-article">
+                            <div class="image-profile">
+                                <img src="img/profile/profile1.png" alt="" width="40">
+                            </div>
+                            <p class="user-name">Agustin</p>
+                        </li>
+                        <li class="article-time">
+                            <p>Hace <span>7</span> horas</p>
+                        </li>
+                    </ul>
+                    <ul class="buttons-comment-love">
+                        <li class="icon-comment">
+                            <p><i class="far fa-comment-dots"></i></p>
+                        </li>
+                        <li class="icon-love">
+                            <p><i class="far fa-heart"></i></p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="pet-page type-adopt adopt-form">
+                <h4 class="title-get">Hazlo tuyo</h4>
+                <form action="" method="post" class="formulario">
+                    <input type="text" name="" id="" placeholder="Ingresa tu nombre" maxlength="100" required><br>
+                    <input type="email" name="" id="" placeholder="Ingresa tu email" maxlength="150" required><br>
+                    <input type="tel" name="" id="" placeholder="Ingresa tu telefono" maxlength="20" required><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="¿Cual es la razon por la que quieres adoptar?" required></textarea><br>
+                    
+                    <label for="casa">Tipo de casa</label>
+                    <select name="" id="casa" required>
+                        <option value="">Departamento</option>
+                        <option value="">Unifamiliar</option>
+                        <option value="">Plurifamiliar</option>
+                        <option value="">Estudio</option>
+                        <option value="">Duplex</option>
+                    </select><br>
+                    
+                    <label for="patio">¿Cuentas con patio?</label>
+                    <input type="radio" name="patio" value="si" id="si"><label for="hombre">Si</label>
+                    <input type="radio" name="patio" value="no" id="no"><label for="mujer">No</label><br>
+
+                    <input type="number" name="" id="" placeholder="¿Cuantas personas viven en tu casa" required><br>
+                    
+                    <label for="animales">¿Tienes otro animales en tu casa?</label>
+                    <input type="radio" name="animales" value="si" id="si"><label for="hombre">Si</label>
+                    <input type="radio" name="animales" value="no" id="no"><label for="mujer">No</label>
+                    <input type="text" name="" id="" placeholder="¿Cuales?"><br>
+
+                    <input type="text" name="" id="" placeholder="¿Donde dormira tu nueva mascota?"><br>
+
+                    <input type="text" name="" id="" placeholder="¿Cuanto tiempo pasara solo la nueva mascota?"><br>
+
+                    <label for="niños">¿Tienes niños?</label>
+                    <input type="radio" name="niños" value="si" id="si"><label for="hombre">Si</label>
+                    <input type="radio" name="niños" value="no" id="no"><label for="mujer">No</label>
+                    <input type="number" name="" id="" placeholder="Cuantos?"><br>
+
+                    <label for="renta">¿Tienes casa propia?</label>
+                    <select name="" id="renta" required>
+                        <option value="">Rentada</option>
+                        <option value="">Casa Propia</option>
+                    </select><br>
+
+                    <label for="foto">Sube una foto de un documento que te valide como persona</label>
+                    <input type="file" name="" id="foto"><br>
+
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="" id="nacimiento"><br>
+
+                    <label for="terminos">Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="terminos" value="terminos" id="terminos"><br>
+
+                    <input type="submit" value="Enviar Formulario">
+                </form>
+            </article>
+        </div>
     </main>
     <?php include_once "navegacionMovil.view.php"; ?>
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+@import articulos
 body
     main
         .main-of-page
@@ -16,178 +17,17 @@ body
                     flex-direction: row
                     flex-wrap: wrap
                     justify-content: space-between
-                    .type-sharing,.type-adopt
-                        overflow: hidden
-                        position: relative
-                        align-self: baseline
-                        min-height: 100%
-                        margin-bottom: 30px
-                        background: white
-                        border-radius: 7px
-                        box-shadow: 0 0 10px 2px $color-9-hex
-                    .article-about-sharing,.article-about-adopt
-                            width: 100%
-                            display: flex
-                            flex: auto
-                            flex-wrap: nowrap
-                            justify-content: space-between
-                            .user-time,.buttons-comment-love
-                                padding: 0
-                                margin: 0
-                                width: 50%
-                                list-style: none
-                                display: flex
-                                flex-wrap: nowrap
-                                justify-content: space-between
-                                align-content: center
-                                padding: 7px 10px
-                                font-size: 15px
-                            .user-time
-                                background: $color-6-hex
-                                p
-                                    color: $color-8-hex
-                                    margin-top: 5px
-                                    text-decoration: underline
-                                    transition: all .3s ease
-                                    &:hover
-                                        color: $color-4-hex
-                                        cursor: pointer
-                                .user-info-article
-                                    display: flex
-                                    justify-content: left
-                                    align-content: center
-                                    .image-profile
-                                        margin-right: 7px
-                                        width: 25px
-                                        overflow: hidden
-                                        border-radius: 50%
-                                        img
-                                            width: 100%
-                            .buttons-comment-love
-                                background: $color-7-hex
-                                font-size: 20px
-                                .icon-love, .icon-comment
-                                    transition: all .3s ease
-                                .icon-love
-                                    &:hover
-                                        color: $color-10-hex
-                                .icon-comment
-                                    &:hover
-                                        color: $color-5-hex
-                                p
-                                    margin-top: 3px
-                                    transition: all .3s ease
-                                    &:hover
-                                        transform: scale(1.1)
-                                        cursor: pointer
-                    .type-sharing
-                        width: 100%
-                        max-height: 320px
-                        .article-sharing-content-view
-                            width: 100%
-                            display: flex
-                            .article-sharing-text,.image-article-sharing
-                                width: 50%
-                                padding: 10px 20px
-                            .article-sharing-text
-                                overflow: scroll
-                                .title-article
-                                    color: $color-9-hex
-                                    font-family: $fuente3
-                                    margin-bottom: 10px
-                                p
-                                    color: $color-9-hex
-                                    font-size: 14px
-                                    line-height: 18px
-                                    letter-spacing: 1px
-                                    text-align: left
-                            .image-article-sharing
-                                height: 100%
-                                display: flex
-                                justify-items: center
-                                align-items: center
-                                img
-                                    border-radius: 7px
-                                    margin: auto
-                                    max-height: 300px
-                    .type-adopt
-                        width: 47%
-                        .article-about-adopt
-                            width: 100%
-                            flex-wrap: wrap
-                            .user-time,.buttons-comment-love
-                                width: 100%
-                            .buttons-comment-love
-                                padding: 7px 25px
-                        .article-adop-content-view
-                            display: flex
-                            width: 100%
-                            .about-pet, .image-reasons
-                                width: 50%
-                            .about-pet
-                                background: $color-9-hex
-                                color: $color-8-hex
-                                padding: 10px
-                                .name-pet
-                                    font-family: $fuente3
-                                    text-align: center
-                                    font-size: 16px
-                                    margin-bottom: 7px
-                                .about-pet
-                                    margin: 0
-                                    padding: 0
-                                    width: 100%
-                                    line-height: 18px
-                                    letter-spacing: 1px
-                                    font-size: 12px
-                                    font-family: $fuente2
-                            .image-reasons
-                                .image-pet
-                                    img
-                                        width: 100%
-                                .reasons
-                                    padding: 10px
-                                    color: $color-9-hex
-                                    h5
-                                        font-family: $fuente3
-                                        font-size: 16px
-                                        margin-bottom: 7px
-                                    p
-                                        margin: 0
-                                        padding: 0
-                                        line-height: 16px
-                                        letter-spacing: 1px
-                                        font-size: 12px
-                                        font-family: $fuente2
-                        .state-pet
-                            padding: 8px 0px
-                            background: $color-6-hex
-                            h6
-                                font-size: 20px
-                                font-weight: 500
-                                text-align: center
-                        .get-pet
-                            border: 2px solid $color-10-hex
-                            border-bottom-left-radius: 7px
-                            border-bottom-right-radius: 7px
-                            overflow: hidden
-                            a
-                                transition: all .3s ease
-                                padding: 12px 16px
-                                background: $color-10-hex
-                                display: block
-                                text-align: center
-                                text-decoration: none
-                                color: white
-                                font-size: 24px
-                                font-weight: 500
-                                font-family: $fuente2
-                                i
-                                    color: $color-4-hex
-                            &:hover
-                                border: 2px solid $color-4-hex 
-                                a
-                                    background: $color-3-hex
-                                    display: block
-                                    text-decoration: underline
-                                    color: $color-2-hex
+                    @include articulos(47%)
+    .pet
+        *
+            margin: 0
+            padding: 0
+        .container
+            position: absolute
+            left: 360px
+            top: 90px
+            @include articulos(100%)
+            .pet-page
+                font-family: $fuente2
+                width: 75%
+                margin: auto
