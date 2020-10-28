@@ -1013,7 +1013,7 @@ body .pet .container .pet-page {
   header .navigation .buttons-navigation {
     display: none !important;
   }
-  .image-contact, .about-pet {
+  .pet > .pet-page .image-contact, .pet > .pet-page .about-pet {
     width: 100% !important;
   }
 }
