@@ -1,0 +1,44 @@
+@mixin input-placeholder($color) {
+    &.placeholder {
+        color: $color;
+    }
+
+    /* if not supported, Javascript should add class */
+    &:-moz-placeholder {
+        color: $color;
+    }
+
+    /* Mozilla Firefox 4 to 18 */
+    &::-moz-placeholder {
+        color: $color;
+    }
+
+    /* Mozilla Firefox 19+ */
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+
+    /* WebKit browsers */
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+
+    /* Internet Explorer 10+ */
+
+    /* browsers with full support for placeholder styling */
+    &::input-placeholder {
+        color: $color;
+    }
+
+    &:input-placeholder {
+        color: $color;
+    }
+
+    &::placeholder {
+        color: $color;
+    }
+
+    &:placeholder {
+        color: $color;
+    }
+}

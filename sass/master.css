@@ -1193,7 +1193,7 @@ body .pet .container .pet-page {
 }
 
 .pet .adopt-form .formulario input, .pet .adopt-form .formulario textarea, .pet .adopt-form .formulario .casa, .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos, .pet .adopt-form .formulario .renta, .pet .adopt-form .formulario .foto, .pet .adopt-form .formulario .nacimiento, .pet .adopt-form .formulario .terminos {
-  color: #000000;
+  color: #000000 !important;
   margin: auto;
   font-weight: 600;
   margin-bottom: 50px;
@@ -1205,6 +1205,12 @@ body .pet .container .pet-page {
 }
 
 .pet .adopt-form .formulario input, .pet .adopt-form .formulario textarea, .pet .adopt-form .formulario select {
+  /* if not supported, Javascript should add class */
+  /* Mozilla Firefox 4 to 18 */
+  /* Mozilla Firefox 19+ */
+  /* WebKit browsers */
+  /* Internet Explorer 10+ */
+  /* browsers with full support for placeholder styling */
   opacity: 0.8;
   text-align: center;
   border: none;
@@ -1213,6 +1219,54 @@ body .pet .container .pet-page {
   padding: 10px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
+}
+
+.pet .adopt-form .formulario input.placeholder, .pet .adopt-form .formulario textarea.placeholder, .pet .adopt-form .formulario select.placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input:-moz-placeholder, .pet .adopt-form .formulario textarea:-moz-placeholder, .pet .adopt-form .formulario select:-moz-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::-moz-placeholder, .pet .adopt-form .formulario textarea::-moz-placeholder, .pet .adopt-form .formulario select::-moz-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::input-placeholder, .pet .adopt-form .formulario textarea::input-placeholder, .pet .adopt-form .formulario select::input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input:input-placeholder, .pet .adopt-form .formulario textarea:input-placeholder, .pet .adopt-form .formulario select:input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::-ms-input-placeholder, .pet .adopt-form .formulario textarea::-ms-input-placeholder, .pet .adopt-form .formulario select::-ms-input-placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input::placeholder, .pet .adopt-form .formulario textarea::placeholder, .pet .adopt-form .formulario select::placeholder {
+  color: #000;
+}
+
+.pet .adopt-form .formulario input:placeholder, .pet .adopt-form .formulario textarea:placeholder, .pet .adopt-form .formulario select:placeholder {
+  color: #000;
 }
 
 .pet .adopt-form .formulario .casa, .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos, .pet .adopt-form .formulario .renta {

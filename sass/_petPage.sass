@@ -50,14 +50,16 @@
             justify-content: center
             flex-direction: column
             input, textarea, .casa, .patio, .animales, .ninos, .renta, .foto, .nacimiento, .terminos
-                color: #000000
+                color: #000000 !important
                 margin: auto
                 font-weight: 600
                 margin-bottom: 50px
                 width: 80%
             input, textarea, label, option, select
                 font-size: 18px !important
+            @import placeholder
             input, textarea, select
+                @include input-placeholder(#000)
                 opacity: 0.8
                 text-align: center
                 border: none 
