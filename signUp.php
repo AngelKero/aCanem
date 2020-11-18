@@ -6,7 +6,7 @@ Author URL: http://w3layouts.com
 <html lang="zxx">
 
 <head>
-	<title>Iniciar Sesion | aCanem</title>
+	<title>Registro Cuenta | aCanem</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -32,7 +32,7 @@ Author URL: http://w3layouts.com
 	<section class="w3l-forms-23">
 		<div class="forms23-block-hny">
 			<div class="wrapper">
-				<h1>Inicia Sesion para adoptar</h1>
+				<h1>Registrate para adoptar</h1>
 				<!-- <a class="logo" href="index.php">
 					<img src="resourses/favicon.svg" alt="Your logo" title="Your logo" style="height:50px;" />
 				</a> -->
@@ -50,9 +50,9 @@ Author URL: http://w3layouts.com
 							<form action="#" method="post">
 								<input type="email" name="email" class="input-form" placeholder="Your Email" required="required" />
 								<input type="password" name="password" class="input-form" placeholder="Your Password" required="required" />
-								<button type="submit" class="loginhny-btn btn">Entrar</button>
+								<button type="submit" class="loginhny-btn btn">Registrarse</button>
 							</form>
-							<p>¿No eres miembro aún? <a href="signUp.php">Unete Ahora!</a></p>
+							<p>¿Ya tienes una cuenta? <a href="login.php">Entra ahora mismo!</a></p>
 						</div>
 					</div>
 				</div>
