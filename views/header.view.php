@@ -24,19 +24,19 @@
 
             </li>
             <li class="button-messages">
-                <a href="#">
+                <a href="login.php">
                     <p class="icon-button"><i class="fas fa-inbox"></i></p>
                     <p class="text-button">Mensajes</p>
                 </a>
             </li>
             <li class="button-notifications">
-                <a href="#">
+                <a href="login.php">
                     <p class="icon-button"><i class="fas fa-bell"></i></p>
                     <p class="text-button">Notificaciones</p>
                 </a>
             </li>
             <li class="button-options">
-                <a href="#">
+                <a href="login.php">
                     <p class="icon-button"><i class="fas fa-bars"></i></p>
                     <p class="text-button">Mas opciones</p>
                 </a>
