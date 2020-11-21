@@ -48,8 +48,11 @@ Author URL: http://w3layouts.com
 						</div>
 						<div class="bottom-content">
 							<form action="#" method="post">
-								<input type="email" name="email" class="input-form" placeholder="Your Email" required="required" />
-								<input type="password" name="password" class="input-form" placeholder="Your Password" required="required" />
+                                <input type="email" name="email" class="input-form" placeholder="Correo Electronico" required="required" />
+                                <input type="text" name="name" class="input-form" placeholder="Nombre Usuario" required="required" />
+                                <input type="number" name="date" class="input-form" placeholder="Edad" required="required" />
+                                <input type="password" name="password" class="input-form" placeholder="Nueva contraseña" required="required" />
+                                <input type="password" name="password-repeat" class="input-form" placeholder="Repite tu contraseña" required="required" />
 								<button type="submit" class="loginhny-btn btn">Registrarse</button>
 							</form>
 							<p>¿Ya tienes una cuenta? <a href="login.php">Entra ahora mismo!</a></p>
