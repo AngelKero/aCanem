@@ -56,6 +56,13 @@ function numero_paginas($postPagina, $conexion){
     return $numeroPaginas;
 }
 
+function obtener_usuario($conexion, $sesion){
+    $statement = $conexion->prepare("SELECT * FROM user WHERE email = :sesion");
+    $statement->execute(['sesion' => $sesion]);
+    $user = $statement->fetchAll();
+    return $user;
+}
+
 function fecha($fecha){
     $timestamp = strtotime($fecha);
     $meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
