@@ -62,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
             ':password' => $password
         ]);
 
-        // #Si todo fue correcto se redirige al login
-        // header('Location: login.php');
+        #Si todo fue correcto se redirige al login
+        header('Location: login.php');
     }
 }
 
