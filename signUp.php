@@ -37,15 +37,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
 		}
 
         #--------Se comprueba que el usuario ingresado no exista------------>
-        $statement = $conexion->prepare('SELECT * FROM user WHERE name = :username OR email = :email LIMIT 1');
+        $statement = $conexion->prepare('SELECT * FROM user WHERE username = :username OR email = :email LIMIT 1');
         $statement->execute([
 			':username' => $username, 
 			':email' => $email
 		]);
 		$resultado = $statement->fetch();
-		echo '<pre>';
-		print_r($resultado);
-		echo '</pre>';
+		// echo '<pre>';
+		// print_r($resultado);
+		// echo '</pre>';
         if($resultado != false){
             $errores .= '<li>El usuario ya existe</li>';
         }
@@ -62,8 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
             ':password' => $password
         ]);
 
-        #Si todo fue correcto se redirige al login
-        header('Location: login.php');
+        // #Si todo fue correcto se redirige al login
+        // header('Location: login.php');
     }
 }
 
