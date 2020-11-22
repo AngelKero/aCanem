@@ -11,33 +11,29 @@
                 <div class="article-adop-content-view">
                     <div class="about-pet">
                         <div class="pet-info">
-                            <h4 class="name-pet">Dogger 3000</h4>
-                            <p class="pet-talk">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-                                nostrum corporis quo quas id quasi mollitia rerum iste ipsa accusantium expedita,
-                                optio provident ipsam nobis maxime magni vel enim perspiciatis.</p>
+                            <h4 class="name-pet"><?php echo $articulo['nombre'] ?></h4>
+                            <p class="pet-talk"><?php echo $articulo['info'] ?></p>
                         </div>
                         <div class="reasons info-block">
                             <h5>En adopcion: </h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt qui et
-                                cupiditate placeat odit doloremque exercitationem sequi ad natus.</p>
+                            <p><?php echo $articulo['motivos'] ?></p>
                         </div>
                         <div class="reasons info-block">
                             <h5>Caracteristicas: <i class="fas fa-paw"></i></h5>
                             <p>
-                                <span style="font-weight: bolder;">Tipo</span> | Canino --
-                                <span style="font-weight: bolder;">Raza</span> | Meztiza --
-                                <span style="font-weight: bolder;">Peso</span> | 1.3kg --
-                                <span style="font-weight: bolder;">Tamaño</span> | Pequeño --
-                                <span style="font-weight: bolder;">Edad</span> | 4 años <br><br>
-                                <span style="font-weight: bolder;">Sociable con Perros</span> | Si <br><br>
-                                <span style="font-weight: bolder;">Sociable con Niños</span> | Si <br><br>
-                                <span style="font-weight: bolder;">Nivel de ejercicio</span> | Frecuente - Diario <br>
-                                <br>
-                                <span style="font-weight: bolder;">Energia</span> | Grande <br><br>
-                                <span style="font-weight: bolder;">Espacio Requerido</span> | Mediano <br> <br>
-                                <span style="font-weight: bolder;">Sexo</span> | Macho --
-                                <span style="font-weight: bolder;">Esterilizado</span> | No --
-                                <span style="font-weight: bolder;">Desparasitado</span> | Si <br><br>
+                                <span style="font-weight: bolder;">Tipo</span> | <?php echo $articulo['tipo'] ?> <br>
+                                <span style="font-weight: bolder;">Raza</span> | <?php echo $articulo['raza'] ?> <br>
+                                <span style="font-weight: bolder;">Peso</span> | <?php echo $articulo['peso'] ?> <br>
+                                <span style="font-weight: bolder;">Tamaño</span> | <?php echo $articulo['tamano'] ?> <br>
+                                <span style="font-weight: bolder;">Edad</span> | <?php echo $articulo['edad'] ?> <br><br>
+                                <span style="font-weight: bolder;">Sociable con Perros</span> | <?php echo $articulo['mascotas'] ?> <br>
+                                <span style="font-weight: bolder;">Sociable con Niños</span> | <?php echo $articulo['ninos'] ?> <br><br>
+                                <span style="font-weight: bolder;">Nivel de ejercicio</span> | <?php echo $articulo['ejercicio'] ?> <br>
+                                <span style="font-weight: bolder;">Energia</span> | <?php echo $articulo['energia'] ?> <br>
+                                <span style="font-weight: bolder;">Espacio Requerido</span> | <?php echo $articulo['raza'] ?> <br><br>
+                                <span style="font-weight: bolder;">Sexo</span> | <?php echo $articulo['sexo'] ?> <br>
+                                <span style="font-weight: bolder;">Esterilizado</span> | <?php echo $articulo['esterelizado'] ?> <br>
+                                <span style="font-weight: bolder;">Desparasitado</span> | <?php echo $articulo['desparazitado'] ?>
                             </p>
                         </div>
                     </div>
@@ -49,12 +45,9 @@
                     <div class="contacto info-block">
                         <h5>Mi dueño: <i class="fas fa-user"></i></h5>
                         <p>
-                            <span style="font-weight: bolder;">Nombre</span> | Don mamerto <br><br>
-                            <span style="font-weight: bolder;">Causa</span> | Ninguna <br><br>
-                            <span style="font-weight: bolder;">Email</span> | don.mamas@outlook.com <br><br>
-                            <span style="font-weight: bolder;">Telefono</span> | 3325094748 <br><br>
-                            <span style="font-weight: bolder;">Facebook</span> |
-                            https://www.facebook.com/angeladrian.zaragozarodriguez <br><br>
+                            <span style="font-weight: bolder;">Nombre</span> | <?php echo $dueño['username'] ?> <br><br>
+                            <span style="font-weight: bolder;">Causa</span> | <?php echo $dueño['tipoCuenta'] ?> <br><br>
+                            <span style="font-weight: bolder;">Email</span> | <?php echo $dueño['email'] ?> <br><br>
                         </p>
                     </div>
                 </div>
@@ -64,7 +57,7 @@
                             <div class="image-profile">
                                 <img src="img/profile/profile1.png" alt="" width="40">
                             </div>
-                            <p class="user-name">Agustin</p>
+                            <p class="user-name"><?php echo obtener_NombreUsuario($dueño['id_user'], $conexion) ?></p>
                         </li>
                         <li class="article-time">
                             <p>Hace <span>7</span> horas</p>
@@ -146,10 +139,11 @@
                         </select>
                     </div>
 
-                    <div class="foto">
+                    <!-- No disponible -->
+                    <!-- <div class="foto">
                         <label for="foto">Sube una foto de un documento que te valide como persona:</label>
                         <input type="file" name="" id="foto" required>
-                    </div>
+                    </div> -->
 
                     <div class="nacimiento">
                         <label for="nacimiento">Fecha de nacimiento</label>

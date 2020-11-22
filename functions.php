@@ -62,7 +62,7 @@ function obtener_NombreUsuario($id, $conexion){
 }
 
 function obtener_post_id($conexion, $id){
-    $resultado = $conexion->query("SELECT * FROM articulos WHERE id = $id LIMIT 1");
+    $resultado = $conexion->query("SELECT * FROM mascota WHERE id_mascota = $id LIMIT 1");
     $resultado = $resultado->fetchAll();
     return ($resultado) ?? false;
 }
