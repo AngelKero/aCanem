@@ -14,9 +14,10 @@
         </div>
         <?php if (isset($_SESSION['usuario'])): ?>
         <div class="user-stadistics">
-            <p class="user-pets">Mis mascotas: <span id="num-pets">2</span></p>
+            <p class="user-pets">Proximamente mas caracteristicas</p>
+            <!-- <p class="user-pets">Mis mascotas: <span id="num-pets">2</span></p>
             <p class="user-pets">He ayudado: <span id="num-helps">1</span></p>
-            <p class="user-pets">Mis contribuciones: <span id="num-contributions">25</span></p>
+            <p class="user-pets">Mis contribuciones: <span id="num-contributions">25</span></p> -->
         </div>
         <?php endif ?>
     </section>
