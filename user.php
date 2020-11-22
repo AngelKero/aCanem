@@ -85,7 +85,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
             ':tipoCuenta' => $cuenta,
             ':id' => $id
         ]);
-
+        
+        $_SESSION['usuario'] = $email; 
         #Si todo fue correcto se redirige al login
         header('Location: user.php');
     }

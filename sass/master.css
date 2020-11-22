@@ -1637,4 +1637,126 @@ body .pet .container .pet-page {
     text-align: center;
   }
 }
+
+.main-of-page > .article-form {
+  width: 75%;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  padding-top: 0px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.5) inset, 0px 0px 7px 0px white;
+          box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.5) inset, 0px 0px 7px 0px white;
+}
+
+.main-of-page > .article-form > * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-of-page > .article-form::before {
+  content: '';
+  display: inline-block;
+  width: 1500px;
+  height: 1px;
+  margin: 0;
+}
+
+.main-of-page > .article-form h5 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  text-shadow: 1px 2px 5px rgba(166, 114, 145, 0.5);
+  border-bottom: 5px solid #A67291;
+}
+
+.main-of-page > .article-form .pregunta {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.main-of-page > .article-form .pregunta > * {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 22px;
+}
+
+.main-of-page > .article-form .pregunta label {
+  text-align: right;
+  margin-right: 15px;
+  vertical-align: top;
+}
+
+.main-of-page > .article-form .pregunta p {
+  display: inline-block;
+  margin: 20px 0px;
+  padding: 7px 15px;
+  border: 7px solid #A67291;
+  border-bottom: 7px solid white;
+}
+
+.main-of-page > .article-form .pregunta input, .main-of-page > .article-form .pregunta textarea {
+  width: 60%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #A67291), to(#D98292));
+  background-image: linear-gradient(#A67291 10%, #D98292 100%);
+  border: 7px solid white;
+  border-bottom: 7px solid #A67291;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 10px;
+  color: white;
+}
+
+.main-of-page > .article-form .pregunta input:hover, .main-of-page > .article-form .pregunta input:focus, .main-of-page > .article-form .pregunta textarea:hover, .main-of-page > .article-form .pregunta textarea:focus {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #D98292), to(#A67291));
+  background-image: linear-gradient(#D98292 10%, #A67291 100%);
+}
+
+.main-of-page > .article-form .pregunta input:active, .main-of-page > .article-form .pregunta textarea:active {
+  -webkit-transition: all .01s ease;
+  transition: all .01s ease;
+  -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+.main-of-page > .article-form .pregunta textarea {
+  max-width: 60%;
+  min-width: 60%;
+  min-height: 150px;
+  max-height: 600px;
+}
+
+.main-of-page > .article-form .pregunta input[type="submit"] {
+  color: black;
+  text-shadow: 1px 2px 5px white;
+  font-size: 24px;
+  font-weight: 500 !important;
+  border: none;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 3px 1px rgba(0, 0, 0, 0.4) !important;
+          box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 3px 1px rgba(0, 0, 0, 0.4) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9DC6C9), to(#3E8C8C));
+  background-image: linear-gradient(#9DC6C9 10%, #3E8C8C 100%);
+}
+
+.main-of-page > .article-form .pregunta input[type="submit"]:hover, .main-of-page > .article-form .pregunta input[type="submit"]:focus {
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #3E8C8C), to(#9DC6C9));
+  background-image: linear-gradient(#3E8C8C 10%, #9DC6C9 100%);
+}
+
+.main-of-page > .article-form .pregunta input[type="submit"]:active {
+  -webkit-transition: all .01s ease;
+  transition: all .01s ease;
+  -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28) !important;
+          box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28) !important;
+}
 /*# sourceMappingURL=master.css.map */
