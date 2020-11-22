@@ -5,7 +5,7 @@
                 <img src="resourses/favicon.svg" alt="logo canem">
                 <div class="letters-logo">
                     <h1>aCanem</h1>
-                    <h2>adopta</h2>
+                    <h2>adopta | Beta v. 0.1</h2>
                 </div>
             </a>
         </div>

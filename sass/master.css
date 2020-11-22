@@ -331,6 +331,8 @@ body main .main-of-page {
 body main .main-of-page .publish-article {
   width: 75%;
   margin: auto;
+  margin-bottom: 35px;
+  border-bottom: 3px solid #A67291;
 }
 
 body main .main-of-page .publish-article h4 {
@@ -1103,7 +1105,7 @@ body .pet .container .pet-page {
 }
 
 @media screen and (max-width: 1550px) {
-  .articles, .pet-page {
+  .articles, .pet-page, .article-form {
     width: 90%;
   }
 }
@@ -1298,80 +1300,80 @@ body .pet .container .pet-page {
   text-align: center;
   border: none;
   border-bottom: 3px solid #3E8C8C;
-  background: #A67291;
+  background: #9DC6C9;
   padding: 10px;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
 
 .pet .adopt-form .formulario input.placeholder, .pet .adopt-form .formulario textarea.placeholder, .pet .adopt-form .formulario select.placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-moz-placeholder, .pet .adopt-form .formulario textarea:-moz-placeholder, .pet .adopt-form .formulario select:-moz-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-moz-placeholder, .pet .adopt-form .formulario textarea::-moz-placeholder, .pet .adopt-form .formulario select::-moz-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::input-placeholder, .pet .adopt-form .formulario textarea::input-placeholder, .pet .adopt-form .formulario select::input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:input-placeholder, .pet .adopt-form .formulario textarea:input-placeholder, .pet .adopt-form .formulario select:input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-ms-input-placeholder, .pet .adopt-form .formulario textarea::-ms-input-placeholder, .pet .adopt-form .formulario select::-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::placeholder, .pet .adopt-form .formulario textarea::placeholder, .pet .adopt-form .formulario select::placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:placeholder, .pet .adopt-form .formulario textarea:placeholder, .pet .adopt-form .formulario select:placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
   font-weight: 500;
 }
@@ -1638,31 +1640,28 @@ body .pet .container .pet-page {
   }
 }
 
-.main-of-page > .article-form {
+.main-of-page {
+  position: static !important;
+  margin-left: 320px;
+  margin-top: 90px;
+}
+
+.main-of-page > .article-public {
   width: 75%;
   margin: auto;
-  background: white;
   padding: 15px;
-  padding-top: 0px;
   border-radius: 7px;
+  background: white;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.5) inset, 0px 0px 7px 0px white;
           box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.5) inset, 0px 0px 7px 0px white;
 }
 
-.main-of-page > .article-form > * {
+.main-of-page > .article-public > * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.main-of-page > .article-form::before {
-  content: '';
-  display: inline-block;
-  width: 1500px;
-  height: 1px;
-  margin: 0;
-}
-
-.main-of-page > .article-form h5 {
+.main-of-page > .article-public h5 {
   padding: 0;
   margin: 0;
   text-align: center;
@@ -1673,23 +1672,17 @@ body .pet .container .pet-page {
   border-bottom: 5px solid #A67291;
 }
 
-.main-of-page > .article-form .pregunta {
+.main-of-page > .article-public .pregunta {
   margin-top: 25px;
   text-align: center;
 }
 
-.main-of-page > .article-form .pregunta > * {
+.main-of-page > .article-public .pregunta > * {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 22px;
 }
 
-.main-of-page > .article-form .pregunta label {
-  text-align: right;
-  margin-right: 15px;
-  vertical-align: top;
-}
-
-.main-of-page > .article-form .pregunta p {
+.main-of-page > .article-public .pregunta p {
   display: inline-block;
   margin: 20px 0px;
   padding: 7px 15px;
@@ -1697,7 +1690,14 @@ body .pet .container .pet-page {
   border-bottom: 7px solid white;
 }
 
-.main-of-page > .article-form .pregunta input, .main-of-page > .article-form .pregunta textarea {
+.main-of-page > .article-public .pregunta label {
+  text-align: right;
+  margin-right: 15px;
+  vertical-align: top;
+  width: 30%;
+}
+
+.main-of-page > .article-public .pregunta input, .main-of-page > .article-public .pregunta textarea {
   width: 60%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #A67291), to(#D98292));
   background-image: linear-gradient(#A67291 10%, #D98292 100%);
@@ -1711,28 +1711,28 @@ body .pet .container .pet-page {
   color: white;
 }
 
-.main-of-page > .article-form .pregunta input:hover, .main-of-page > .article-form .pregunta input:focus, .main-of-page > .article-form .pregunta textarea:hover, .main-of-page > .article-form .pregunta textarea:focus {
+.main-of-page > .article-public .pregunta input:hover, .main-of-page > .article-public .pregunta input:focus, .main-of-page > .article-public .pregunta textarea:hover, .main-of-page > .article-public .pregunta textarea:focus {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #D98292), to(#A67291));
   background-image: linear-gradient(#D98292 10%, #A67291 100%);
 }
 
-.main-of-page > .article-form .pregunta input:active, .main-of-page > .article-form .pregunta textarea:active {
+.main-of-page > .article-public .pregunta input:active, .main-of-page > .article-public .pregunta textarea:active {
   -webkit-transition: all .01s ease;
   transition: all .01s ease;
   -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
           box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
 }
 
-.main-of-page > .article-form .pregunta textarea {
+.main-of-page > .article-public .pregunta textarea {
   max-width: 60%;
   min-width: 60%;
   min-height: 150px;
   max-height: 600px;
 }
 
-.main-of-page > .article-form .pregunta input[type="submit"] {
+.main-of-page > .article-public .pregunta input[type="submit"] {
   color: black;
   text-shadow: 1px 2px 5px white;
   font-size: 24px;
@@ -1745,7 +1745,7 @@ body .pet .container .pet-page {
   background-image: linear-gradient(#9DC6C9 10%, #3E8C8C 100%);
 }
 
-.main-of-page > .article-form .pregunta input[type="submit"]:hover, .main-of-page > .article-form .pregunta input[type="submit"]:focus {
+.main-of-page > .article-public .pregunta input[type="submit"]:hover, .main-of-page > .article-public .pregunta input[type="submit"]:focus {
   cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -1753,10 +1753,26 @@ body .pet .container .pet-page {
   background-image: linear-gradient(#3E8C8C 10%, #9DC6C9 100%);
 }
 
-.main-of-page > .article-form .pregunta input[type="submit"]:active {
+.main-of-page > .article-public .pregunta input[type="submit"]:active {
   -webkit-transition: all .01s ease;
   transition: all .01s ease;
   -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28) !important;
           box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .main-of-page > .article-public {
+    width: 100% !important;
+  }
+  .main-of-page > .article-public .pregunta label {
+    width: 80%;
+  }
+  .main-of-page > .article-public .pregunta input, .main-of-page > .article-public .pregunta textarea {
+    width: 80%;
+  }
+  .main-of-page > .article-public .pregunta textarea {
+    max-width: 80%;
+    min-width: 80%;
+  }
 }
 /*# sourceMappingURL=master.css.map */

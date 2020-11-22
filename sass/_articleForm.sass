@@ -1,20 +1,16 @@
 .main-of-page
-    > .article-form
+    position: static !important
+    margin-left: 320px
+    margin-top: 90px
+    > .article-public
         width: 75%
         margin: auto
-        background: white
         padding: 15px
-        padding-top: 0px
         border-radius: 7px
+        background: white
         box-shadow: 0px 0px 7px 1px rgba(black , .5) inset, 0px 0px 7px 0px rgba(white , 1)
         > *
             box-sizing: border-box
-        &::before 
-            content: ''
-            display: inline-block
-            width: 1500px
-            height: 1px
-            margin: 0
         h5
             padding: 0
             margin: 0
@@ -30,16 +26,17 @@
             > *
                 font-family: $fuente2
                 font-size: 22px
-            label
-                text-align: right
-                margin-right: 15px
-                vertical-align: top
             p
                 display: inline-block
                 margin: 20px 0px
                 padding: 7px 15px
                 border: 7px solid $color-2-hex
                 border-bottom: 7px solid white
+            label
+                text-align: right
+                margin-right: 15px
+                vertical-align: top
+                width: 30%
             input, textarea
                 width: 60%
                 background-image: linear-gradient($color-2-hex 10%,$color-1-hex 100%)
@@ -78,3 +75,16 @@
                 &:active
                     transition: all .01s ease
                     box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(#000, .28) !important
+
+@media screen and ( max-width: 768px )
+    .main-of-page
+        > .article-public
+            width: 100% !important
+            .pregunta
+                label
+                    width: 80%
+                input, textarea
+                    width: 80%
+                textarea
+                    max-width: 80%
+                    min-width: 80%

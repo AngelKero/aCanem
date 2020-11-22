@@ -7,14 +7,14 @@
     <main>
         <?php include_once "userInfo.view.php"; ?>
         <section class="main-of-page">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="article-form">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="article-public">
                 <h5>Comparte algo!</h5>
                 <?php if(!empty($errores)): ?>
-                    <div class="error">
-                        <ul>
-                            <?php echo $errores ?>
-                        </ul>
-                    </div>
+                <div class="error">
+                    <ul>
+                        <?php echo $errores ?>
+                    </ul>
+                </div>
                 <?php endif ?>
                 <div class="pregunta">
                     <label for="titulo">Titulo de tu articulo:</label>
@@ -41,11 +41,6 @@
         </section>
     </main>
     <?php include_once "navegacionMovil.view.php"; ?>
-
-    <!-- Initialize AOS -->
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
