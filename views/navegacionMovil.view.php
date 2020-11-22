@@ -6,7 +6,7 @@
             </a>
         </li>
         <li class="button-cuenta">
-            <a href="<?php echo isset($_SESSION['usuario']) ? '#' : 'login.php'; ?>">
+            <a href="<?php echo isset($_SESSION['usuario']) ? 'user.php' : 'login.php'; ?>">
                 <p class="icon-button"><i class="fas fa-user"></i></p>
             </a>
         </li>
