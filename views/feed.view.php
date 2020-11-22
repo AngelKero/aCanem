@@ -17,6 +17,11 @@
             <!-- <div class="filters"> -->
             </div>
             <div class="articles">
+                <?php if($empty){
+                    echo '<h3 style="font-size: 32px;">Ya no hay nada que cargar :(</h3><br><br>
+                    <h2>Error 404</h2>';
+                } 
+                ?>
                 <?php 
                     $articuloI = 0; //Iterador de articulo
                     $mascotaI = 0;
@@ -99,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="get-pet">
-                                <a href="pet.php"><i class="far fa-handshake"></i> Hazlo mio!!</a>
+                                <a href="pet.php?pet=<?php echo $mascotas[$mascotaI]['id_mascota'] ?>"><i class="far fa-handshake"></i> Hazlo mio!!</a>
                             </div>
                         </article>
                         <?php endif ?>

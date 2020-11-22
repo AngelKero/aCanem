@@ -18,9 +18,10 @@ $filasMascotas = contar_filas($conexion);
 
 $filasTotales = $filasArticulos + $filasMascotas;
 $paginas = numero_paginas($filasTotales, $home_config['postTotales']);
-// echo '<pre>';
-// print_r($mascotas);
-// echo '</pre>';
+
+if (empty($mascotas) and empty($articulos)) {
+    $empty = true;
+}else{$empty = false;}
 
 require_once "views/feed.view.php";
  

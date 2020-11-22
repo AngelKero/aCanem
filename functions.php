@@ -30,7 +30,7 @@ function paginaActual(){
 function obtener_post($postTotales, $tabla, $conexion){
     $inicio = (paginaActual() > 1) ? (paginaActual() * $postTotales - $postTotales) : 0;
 
-    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM $tabla ORDER BY fecha ASC LIMIT $inicio,$postTotales");
+    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM $tabla ORDER BY id_$tabla DESC LIMIT $inicio,$postTotales");
     $statement->execute();
 
     return $statement->fetchAll();

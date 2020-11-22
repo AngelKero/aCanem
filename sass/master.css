@@ -712,7 +712,6 @@ body main .main-of-page .articles .group-articles .article-about-sharing .button
 
 body main .main-of-page .articles .group-articles .type-sharing {
   width: 100%;
-  max-height: 400px;
 }
 
 body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
@@ -1014,7 +1013,6 @@ body .pet .container .article-about-sharing .buttons-comment-love p:hover, body 
 
 body .pet .container .type-sharing {
   width: 100%;
-  max-height: 400px;
 }
 
 body .pet .container .type-sharing .article-sharing-content-view {
