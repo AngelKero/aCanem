@@ -27,19 +27,39 @@ function paginaActual(){
     return isset($_GET['p']) ? (int)$_GET['p'] : 1;
 }
 
-function obtener_post($postPagina, $conexion){
-    $inicio = (paginaActual() > 1) ? 
-    (paginaActual() * $postPagina - $postPagina) : 0;
-    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT $inicio,$postPagina");
+function obtener_post($postTotales, $tabla, $conexion){
+    $inicio = (paginaActual() > 1) ? (paginaActual() * $postTotales - $postTotales) : 0;
+
+    $statement = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM $tabla ORDER BY fecha ASC LIMIT $inicio,$postTotales");
     $statement->execute();
 
     return $statement->fetchAll();
+}
+
+function contar_filas($conexion){
+    $totalArticulos = $conexion->prepare('SELECT FOUND_ROWS() as total');
+    $totalArticulos->execute();
+    $totalArticulos = $totalArticulos->fetch()['total'];
+
+    return $totalArticulos;
 }
 
 function id_articulo($id){
     return (int)limpiarDatos($id);
 }
 
+function numero_paginas($totalArticulos, $postTotales){
+    $numeroPaginas = ceil($totalArticulos / $postTotales);
+    return $numeroPaginas;
+}
+
+function obtener_NombreUsuario($id, $conexion){
+    $statement = $conexion->prepare("SELECT * FROM user WHERE id_user = $id LIMIT 1");
+    $statement->execute();
+    $username = $statement->fetchAll();
+
+    return $username[0]['username'];
+}
 
 function obtener_post_id($conexion, $id){
     $resultado = $conexion->query("SELECT * FROM articulos WHERE id = $id LIMIT 1");
@@ -47,14 +67,6 @@ function obtener_post_id($conexion, $id){
     return ($resultado) ?? false;
 }
 
-function numero_paginas($postPagina, $conexion){
-    $totalArticulos = $conexion->prepare('SELECT FOUND_ROWS() as total');
-    $totalArticulos->execute();
-    $totalArticulos = $totalArticulos->fetch()['total'];
-
-    $numeroPaginas = ceil($totalArticulos / $postPagina);
-    return $numeroPaginas;
-}
 
 function obtener_usuario($conexion, $sesion){
     $statement = $conexion->prepare("SELECT * FROM user WHERE email = :sesion");
@@ -71,6 +83,6 @@ function fecha($fecha){
     $mes = date('m', $timestamp) - 1;
     $year = date('Y', $timestamp);
 
-    $fecha = "$dia de " . $meses[$mes] . " del $year";
+    $fecha = "$dia-" . $meses[$mes] . "-$year";
     return $fecha;
 }

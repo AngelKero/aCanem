@@ -73,12 +73,13 @@
                 width: 50%
                 padding: 10px
             .article-sharing-text
-                overflow: scroll
+                overflow-y: scroll
                 .title-article
                     color: $color-9-hex
                     font-family: $fuente3
                     margin-bottom: 10px
                 p
+                    scroll-snap-align: center
                     color: $color-9-hex
                     font-size: 14px
                     line-height: 18px
@@ -87,7 +88,7 @@
             .image-article-sharing
                 display: flex
                 justify-items: center
-                align-items: center
+                align-self: baseline
                 img
                     display: inline-block
                     width: 98%

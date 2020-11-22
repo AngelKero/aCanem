@@ -10,7 +10,8 @@ $bd_config = [
 ];
 
 $home_config = [
-    'postPagina' => 4,
-    'mascotasPagina' => 8,
+    'postTotales' => 12,
+    'postArticulos' => 4,
+    'postMascotas' => 8,
     'rutaImagenes' => 'images/'
 ];

@@ -91,6 +91,7 @@
                     <select name="tipo" id="tipo" required>
                         <option value="Canino">Canino</option>
                         <option value="Felino">Felino</option>
+                        <option value="Conejo">Conejo</option>
                         <option value="Ave">Ave</option>
                         <option value="Reptil">Reptil</option>
                         <option value="Insecto">Insecto</option>

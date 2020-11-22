@@ -11,8 +11,8 @@ $conexion = conexion($bd_config);
 $sesion = isset($_SESSION['usuario']) ? $_SESSION['usuario'] : NULL;
 $user = obtener_usuario($conexion, $sesion);
 $foto = is_null($user[0]['foto']) ? 'resourses/usuario.png' : $user[0]['foto'];
-echo '<pre>';
-print_r($foto);
-echo '</pre>';
+// echo '<pre>';
+// print_r($foto);
+// echo '</pre>';
 
 require_once "views/pet.view.php";
