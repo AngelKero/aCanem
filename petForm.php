@@ -23,6 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
     $sexo  = limpiarDatos($_POST['sexo']);
     $estelizado     = limpiarDatos($_POST['estelizado']);
     $desparazitado  = limpiarDatos($_POST['desparazitado']);
+    $ninos  = limpiarDatos($_POST['ninos']);
     $mascotas  = limpiarDatos($_POST['mascotas']);
     $tamano    = limpiarDatos($_POST['tamano']);
     $energia   = limpiarDatos($_POST['energia']);
@@ -34,22 +35,50 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {//Se enviaron datos por post
 
     $errores = '';//String para guardar los errores generados
 
-    if(empty($titulo) or empty($texto)){
+    if( empty($nombre) or 
+        empty($info) or
+        empty($motivos) or
+        empty($peso) or
+        empty($edad) or
+        empty($raza) or
+        empty($sexo) or
+        empty($estelizado) or
+        empty($desparazitado) or
+        empty($ninos) or
+        empty($mascotas) or
+        empty($tamano) or
+        empty($energia) or
+        empty($ejercicio)
+    ){
         $errores .= '<li>Por favor rellena todos los datos</li>';
 	}else{
-        if (strlen($titulo) >= 50) {
-            $errores .= '<li>El titulo debe llevar maximo 50 caracteres</li>';
+        if ((strlen($info) <= 50 or strlen($info) >= 1500) or (strlen($motivos) <= 50 or strlen($motivos) >= 1500)) {
+            $errores .= '<li>La descripcion y los motivos deben llevar minimo 50 y maximo 1500 caracteres</li>';
+        }
+        if ($peso <= 0 or $edad <= 0) {
+            $errores .= '<li>Ingresa un peso o edad validos[Mayores a 0]</li>';
         }
     }
 
     #-------------Si no hay ningun error se registra al usuario----------->
     if ($errores == '') {
-        $statement = $conexion->prepare('INSERT INTO articulo (titulo, texto, imagen, id_user) VALUES (:titulo, :texto, :imagen, :user)');
+        $statement = $conexion->prepare('INSERT INTO mascota (nombre, info, motivos, peso, edad, raza, sexo, esterelizado, desparazitado, ninos, mascotas, tamano, energia, ejercicio, id_user) VALUES (:nombre, :info, :motivos, :peso, :edad, :raza, :sexo, :esterelizado, :desparazitado, :ninos, :mascotas, :tamano, :energia, :ejercicio, :id_user)');
         $statement->execute([
-			':titulo' => $titulo,
-			':texto' => $texto,
-			':imagen' => $imagen,
-            ':user' => $id
+            ':nombre' => $nombre,
+            ':info' => $info,
+            ':motivos' => $motivos,
+            ':peso' => $peso,
+            ':edad' => $edad,
+            ':raza' => $raza,
+            ':sexo' => $sexo,
+            ':esterelizado' => $estelizado,
+            ':desparazitado' => $desparazitado,
+            ':ninos' => $ninos,
+            ':mascotas' => $mascotas,
+            ':tamano' => $tamano,
+            ':energia' => $energia,
+            ':ejercicio' => $ejercicio,
+            'id_user' => $id
         ]);
         
         #Si todo fue correcto se redirige al login

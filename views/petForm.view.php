@@ -23,11 +23,11 @@
                 </div>
                 <div class="pregunta">
                     <label for="info">Descripcion de la mascota:</label>
-                    <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                    <textarea name="info" id="info" cols="30" rows="10" maxlength="1500"></textarea>
                 </div>
                 <div class="pregunta">
                     <label for="motivos">¿Por que esta en adopcion?</label>
-                    <textarea name="motivos" id="motivos" cols="30" rows="10"></textarea>
+                    <textarea name="motivos" id="motivos" cols="30" rows="10" maxlength="1500"></textarea>
                 </div>
                 <div class="pregunta">
                     <label for="peso">Peso[Kilos]:</label>
