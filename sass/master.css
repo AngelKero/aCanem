@@ -1222,51 +1222,75 @@ body .pet .container .pet-page {
 }
 
 .pet .adopt-form .formulario input.placeholder, .pet .adopt-form .formulario textarea.placeholder, .pet .adopt-form .formulario select.placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-moz-placeholder, .pet .adopt-form .formulario textarea:-moz-placeholder, .pet .adopt-form .formulario select:-moz-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-moz-placeholder, .pet .adopt-form .formulario textarea::-moz-placeholder, .pet .adopt-form .formulario select::-moz-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::input-placeholder, .pet .adopt-form .formulario textarea::input-placeholder, .pet .adopt-form .formulario select::input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:input-placeholder, .pet .adopt-form .formulario textarea:input-placeholder, .pet .adopt-form .formulario select:input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::-ms-input-placeholder, .pet .adopt-form .formulario textarea::-ms-input-placeholder, .pet .adopt-form .formulario select::-ms-input-placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input::placeholder, .pet .adopt-form .formulario textarea::placeholder, .pet .adopt-form .formulario select::placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario input:placeholder, .pet .adopt-form .formulario textarea:placeholder, .pet .adopt-form .formulario select:placeholder {
-  color: #000;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
 
 .pet .adopt-form .formulario .casa, .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos, .pet .adopt-form .formulario .renta {
@@ -1410,5 +1434,124 @@ body .pet .container .pet-page {
   border-top: 5px solid #3E8C8C;
   cursor: pointer;
   color: black !important;
+}
+
+.main-of-page .edit-user {
+  width: 75%;
+  margin: auto;
+  padding: 15px;
+  -webkit-box-shadow: 0 0 1px 10px rgba(157, 198, 201, 0.2);
+          box-shadow: 0 0 1px 10px rgba(157, 198, 201, 0.2);
+  border-radius: 7px;
+  background: #9DC6C9;
+  margin-bottom: 50px;
+}
+
+.main-of-page .edit-user > * {
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-of-page .edit-user > h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #b61f3f;
+  margin-bottom: 15px;
+}
+
+.main-of-page .edit-user > input, .main-of-page .edit-user select {
+  font-weight: 300;
+  border: none;
+}
+
+.main-of-page .edit-user p {
+  text-align: center;
+  font-size: 30px;
+  margin-left: -160px;
+}
+
+.main-of-page .edit-user label {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: right;
+  width: 40%;
+}
+
+.main-of-page .edit-user input, .main-of-page .edit-user select {
+  display: inline-block;
+  width: 40%;
+  background: #6AA899;
+  padding: 3px 10px;
+  color: white;
+  border: 3px solid #9DC6C9;
+  border-bottom: 6px solid #A67291;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.main-of-page .edit-user input:focus, .main-of-page .edit-user select:focus {
+  background: #D98292;
+}
+
+.main-of-page .edit-user input[type="submit"] {
+  background: #A67291;
+  border: none;
+  border-radius: 0px;
+  display: block;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 7px 0px 14px 0px;
+  border: 6px solid #9DC6C9;
+  border-top: 6px solid #6AA899;
+}
+
+.main-of-page .edit-user input[type="submit"]:hover {
+  background: #6AA899;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  border-top: 6px solid #ff0080;
+  border-bottom: 6px solid #66ff00;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.main-of-page .edit-user .error {
+  width: 100%;
+  background: #b61f3f;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 1px;
+}
+
+@media screen and (max-width: 576px) {
+  .main-of-page .edit-user {
+    width: 100%;
+  }
+  .main-of-page .edit-user label {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .main-of-page .edit-user input, .main-of-page .edit-user select {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  .main-of-page .edit-user p {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=master.css.map */

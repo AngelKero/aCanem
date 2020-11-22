@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="resourses/favicon.svg" type="image/x-icon">
     <title>aCanem | Comparte y adopta Mascotas</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;700&family=Stardos+Stencil&display=swap" rel="stylesheet">
     <!-- Fontasome -->
     <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
@@ -16,7 +17,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Styles -->
     <link rel="stylesheet" href="sass/master.css">
-    <link rel="stylesheet" href="css/styles.css">
     <!-- AOS Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

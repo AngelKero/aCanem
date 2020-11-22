@@ -1,26 +1,36 @@
 @mixin input-placeholder($color) {
     &.placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     /* if not supported, Javascript should add class */
     &:-moz-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     /* Mozilla Firefox 4 to 18 */
     &::-moz-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     /* Mozilla Firefox 19+ */
     &::-webkit-input-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     /* WebKit browsers */
     &:-ms-input-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     /* Internet Explorer 10+ */
@@ -28,17 +38,25 @@
     /* browsers with full support for placeholder styling */
     &::input-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     &:input-placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     &::placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 
     &:placeholder {
         color: $color;
+        opacity: 1;
+        font-weight: 500;
     }
 }

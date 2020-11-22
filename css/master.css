@@ -1,90 +1,845 @@
-/*
-Error: Invalid CSS after "font-family": expected expression (e.g. 1px, bold), was ": $fuente2"
-        on line 4 of F:/wamp64/www/Canem/sass/_petPage.sass
-        from line 86 of F:\wamp64\www\Canem\sass\master.sass
+@charset "UTF-8";
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+*::selection {
+  background: #A67291;
+  color: #9DC6C9; }
 
-1: .pet
-2:     .pet-page
-3:         *
-4:             font-family: font-family: $fuente2
-5:             font-size: 12px !important
-6:         .article-adop-content-view
-7:             display: flex
-8:             .image-contact, .about-pet
-9:                 width: 100% !important
+body {
+  background: #f0f0f0; }
 
-Backtrace:
-F:/wamp64/www/Canem/sass/_petPage.sass:4
-F:\wamp64\www\Canem\sass\master.sass:86
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:761:in `assert_done'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:69:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:228:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script.rb:27:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:1177:in `parse_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:749:in `parse_property'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:708:in `parse_property_or_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:667:in `parse_line'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:540:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:549:in `block in build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:542:in `build_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:559:in `block in append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `each'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:558:in `append_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"font-family\": expected expression (e.g. 1px, bold), was \": $fuente2\"\A         on line 4 of F:/wamp64/www/Canem/sass/_petPage.sass\A         from line 86 of F:\wamp64\www\Canem\sass\master.sass\A \A 1: .pet\A 2:     .pet-page\A 3:         *\A 4:             font-family: font-family: $fuente2\A 5:             font-size: 12px !important\A 6:         .article-adop-content-view\A 7:             display: flex\A 8:             .image-contact, .about-pet\A 9:                 width: 100% !important"; }
+img {
+  vertical-align: top; }
+
+.buttons-navigation {
+  background: #9DC6C9;
+  margin: 0;
+  margin-bottom: -4px;
+  margin-right: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: row; }
+  .buttons-navigation li {
+    margin-left: 30px; }
+    .buttons-navigation li a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column; }
+      .buttons-navigation li a:hover .icon-button {
+        color: #A67291; }
+      .buttons-navigation li a .icon-button {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: #3E8C8C;
+        text-align: center; }
+      .buttons-navigation li a .icon-button.active {
+        color: #A67291 !important; }
+      .buttons-navigation li a .text-button {
+        margin: 0;
+        margin-top: 3px;
+        color: #2e2e2e;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 550; }
+
+.navegacion-movil > .buttons-navigation {
+  display: none; }
+
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  background: #9DC6C9; }
+  body header .navigation {
+    box-shadow: 0 0 5px 1px #6aa899;
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    body header .navigation .logo a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row; }
+      body header .navigation .logo a img {
+        height: 40px; }
+      body header .navigation .logo a .letters-logo {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column; }
+        body header .navigation .logo a .letters-logo h1 {
+          margin: 0;
+          color: #A67291;
+          padding: 0;
+          font-family: "Stardos Stencil", cursive;
+          font-weight: 300; }
+        body header .navigation .logo a .letters-logo h2 {
+          margin: 0;
+          padding: 0;
+          color: #D98292;
+          text-align: right;
+          font-size: 14px;
+          margin-top: -5px;
+          font-weight: 300; }
+    body header .navigation .buscador {
+      background: white;
+      border-radius: 3px;
+      overflow: hidden;
+      border: 1px solid black; }
+      body header .navigation .buscador input[type="search"] {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 4px 14px;
+        width: 450px;
+        float: left;
+        border: none;
+        border-right: 1px solid black; }
+      body header .navigation .buscador .search-icon {
+        float: left;
+        margin-top: 4px;
+        padding: 0 7px; }
+        body header .navigation .buscador .search-icon a {
+          font-size: 18px;
+          color: #A67291; }
+
+body main {
+  overflow: hidden; }
+  body main .info {
+    overflow: scroll;
+    position: fixed;
+    box-sizing: border-box;
+    height: 100vh;
+    z-index: 1;
+    width: 350px;
+    background: #A67291;
+    padding: 0 15px;
+    padding-top: 70px; }
+    body main .info .settings-user {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: right;
+      font-size: 16px;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-family: "Source Sans Pro", sans-serif; }
+      body main .info .settings-user:hover {
+        text-decoration: underline; }
+    body main .info .info-user {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main .info .info-user .image-profile {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        body main .info .info-user .image-profile img {
+          border-radius: 50%;
+          width: 200px;
+          box-shadow: 0 0 7px 1px #A67291; }
+      body main .info .info-user > h3, body main .info .info-user h4 {
+        color: #2e2e2e;
+        text-align: center;
+        margin: 0;
+        padding: 0; }
+      body main .info .info-user > h3 {
+        font-size: 36px;
+        font-weight: 500;
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 5px; }
+      body main .info .info-user > h4 {
+        font-size: 22px;
+        font-weight: 300;
+        font-family: "Source Sans Pro", sans-serif;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+        border-bottom: 3px solid #A67291; }
+      body main .info .info-user .user-stadistics {
+        margin: 35px 0; }
+        body main .info .info-user .user-stadistics p {
+          color: #2e2e2e;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 500;
+          font-size: 14px; }
+          body main .info .info-user .user-stadistics p span {
+            text-decoration: underline; }
+      body main .info .info-user .user-level-info {
+        font-family: "Source Sans Pro", sans-serif; }
+        body main .info .info-user .user-level-info .level {
+          font-size: 32px;
+          font-weight: 400; }
+        body main .info .info-user .user-level-info > p {
+          color: #c49705; }
+        body main .info .info-user .user-level-info .user-level {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 500; }
+        body main .info .info-user .user-level-info .icon-level {
+          font-size: 100px;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          margin-bottom: 15px; }
+        body main .info .info-user .user-level-info > a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 14px;
+          text-decoration: none;
+          color: #f0f0f0; }
+          body main .info .info-user .user-level-info > a:hover {
+            text-decoration: underline; }
+
+body main .main-of-page {
+  position: absolute;
+  left: 360px;
+  top: 90px; }
+  body main .main-of-page .articles {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 75%;
+    margin: auto; }
+    body main .main-of-page .articles * {
+      margin: 0;
+      padding: 0; }
+    body main .main-of-page .articles .group-articles {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      body main .main-of-page .articles .group-articles .type-sharing, body main .main-of-page .articles .group-articles .type-adopt {
+        overflow: hidden;
+        position: relative;
+        align-self: baseline;
+        min-height: 100%;
+        margin-bottom: 30px;
+        background: white;
+        border-radius: 7px;
+        box-shadow: 0 0 10px 2px #2e2e2e; }
+      body main .main-of-page .articles .group-articles .article-about-sharing, body main .main-of-page .articles .group-articles .article-about-adopt {
+        width: 100%;
+        display: flex;
+        flex: auto;
+        flex-wrap: nowrap;
+        justify-content: space-between; }
+        body main .main-of-page .articles .group-articles .article-about-sharing .user-time, body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .user-time, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
+          padding: 0;
+          margin: 0;
+          width: 50%;
+          list-style: none;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-content: center;
+          padding: 7px 10px;
+          font-size: 15px; }
+        body main .main-of-page .articles .group-articles .article-about-sharing .user-time, body main .main-of-page .articles .group-articles .article-about-adopt .user-time {
+          background: #969696; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .user-time p, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p {
+            color: #f0f0f0;
+            margin-top: 5px;
+            text-decoration: underline;
+            transition: all 0.3s ease; }
+            body main .main-of-page .articles .group-articles .article-about-sharing .user-time p:hover, body main .main-of-page .articles .group-articles .article-about-adopt .user-time p:hover {
+              color: #3E8C8C;
+              cursor: pointer; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article {
+            display: flex;
+            justify-content: left;
+            align-content: center; }
+            body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article .image-profile, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article .image-profile {
+              margin-right: 7px;
+              width: 25px;
+              overflow: hidden;
+              border-radius: 50%; }
+              body main .main-of-page .articles .group-articles .article-about-sharing .user-time .user-info-article .image-profile img, body main .main-of-page .articles .group-articles .article-about-adopt .user-time .user-info-article .image-profile img {
+                width: 100%; }
+        body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love {
+          background: #d1d1d1;
+          font-size: 20px; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-love, body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-comment, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-love, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-comment {
+            transition: all 0.3s ease; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-love:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-love:hover {
+            color: #b61f3f; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love .icon-comment:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love .icon-comment:hover {
+            color: #6AA899; }
+          body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love p, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love p {
+            margin-top: 3px;
+            transition: all 0.3s ease; }
+            body main .main-of-page .articles .group-articles .article-about-sharing .buttons-comment-love p:hover, body main .main-of-page .articles .group-articles .article-about-adopt .buttons-comment-love p:hover {
+              transform: scale(1.1);
+              cursor: pointer; }
+      body main .main-of-page .articles .group-articles .type-sharing {
+        width: 100%;
+        max-height: 400px; }
+        body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view {
+          width: 100%;
+          display: flex; }
+          body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
+            width: 50%;
+            padding: 10px; }
+          body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text {
+            overflow: scroll; }
+            body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
+              color: #2e2e2e;
+              font-family: "Roboto Slab", serif;
+              margin-bottom: 10px; }
+            body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .article-sharing-text p {
+              color: #2e2e2e;
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: 1px;
+              text-align: left; }
+          body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing {
+            display: flex;
+            justify-items: center;
+            align-items: center; }
+            body main .main-of-page .articles .group-articles .type-sharing .article-sharing-content-view .image-article-sharing img {
+              display: inline-block;
+              width: 98%;
+              border-radius: 7px;
+              max-height: 300px; }
+      body main .main-of-page .articles .group-articles .type-adopt {
+        width: 47%; }
+        body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt {
+          width: 100%;
+          flex-wrap: wrap; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .user-time, body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .buttons-comment-love {
+            width: 100%; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-about-adopt .buttons-comment-love {
+            padding: 7px 25px; }
+        body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view {
+          display: flex;
+          width: 100%; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet, body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons {
+            width: 50%; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet {
+            background: #2e2e2e;
+            color: #f0f0f0;
+            padding: 10px; }
+            body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet .name-pet {
+              font-family: "Roboto Slab", serif;
+              text-align: center;
+              font-size: 16px;
+              margin-bottom: 7px; }
+            body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .about-pet .about-pet {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              line-height: 18px;
+              letter-spacing: 1px;
+              font-size: 12px;
+              font-family: "Source Sans Pro", sans-serif; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .image-pet img {
+            width: 100%; }
+          body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons {
+            padding: 10px;
+            color: #2e2e2e; }
+            body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons h5 {
+              font-family: "Roboto Slab", serif;
+              font-size: 16px;
+              margin-bottom: 7px; }
+            body main .main-of-page .articles .group-articles .type-adopt .article-adop-content-view .image-reasons .reasons p {
+              margin: 0;
+              padding: 0;
+              line-height: 16px;
+              letter-spacing: 1px;
+              font-size: 12px;
+              font-family: "Source Sans Pro", sans-serif; }
+        body main .main-of-page .articles .group-articles .type-adopt .state-pet {
+          padding: 8px 0px;
+          background: #969696; }
+          body main .main-of-page .articles .group-articles .type-adopt .state-pet h6 {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center; }
+        body main .main-of-page .articles .group-articles .type-adopt .get-pet {
+          border: 2px solid #b61f3f;
+          border-bottom-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+          overflow: hidden; }
+          body main .main-of-page .articles .group-articles .type-adopt .get-pet a {
+            transition: all 0.3s ease;
+            padding: 12px 16px;
+            background: #b61f3f;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: "Source Sans Pro", sans-serif; }
+            body main .main-of-page .articles .group-articles .type-adopt .get-pet a i {
+              color: #3E8C8C; }
+          body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover {
+            border: 2px solid #3E8C8C; }
+            body main .main-of-page .articles .group-articles .type-adopt .get-pet:hover a {
+              background: #9DC6C9;
+              display: block;
+              text-decoration: underline;
+              color: #A67291; }
+body .pet * {
+  margin: 0;
+  padding: 0; }
+body .pet .container {
+  position: absolute;
+  left: 360px;
+  top: 90px; }
+  body .pet .container .type-sharing, body .pet .container .type-adopt {
+    overflow: hidden;
+    position: relative;
+    align-self: baseline;
+    min-height: 100%;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 2px #2e2e2e; }
+  body .pet .container .article-about-sharing, body .pet .container .article-about-adopt {
+    width: 100%;
+    display: flex;
+    flex: auto;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    body .pet .container .article-about-sharing .user-time, body .pet .container .article-about-sharing .buttons-comment-love, body .pet .container .article-about-adopt .user-time, body .pet .container .article-about-adopt .buttons-comment-love {
+      padding: 0;
+      margin: 0;
+      width: 50%;
+      list-style: none;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      padding: 7px 10px;
+      font-size: 15px; }
+    body .pet .container .article-about-sharing .user-time, body .pet .container .article-about-adopt .user-time {
+      background: #969696; }
+      body .pet .container .article-about-sharing .user-time p, body .pet .container .article-about-adopt .user-time p {
+        color: #f0f0f0;
+        margin-top: 5px;
+        text-decoration: underline;
+        transition: all 0.3s ease; }
+        body .pet .container .article-about-sharing .user-time p:hover, body .pet .container .article-about-adopt .user-time p:hover {
+          color: #3E8C8C;
+          cursor: pointer; }
+      body .pet .container .article-about-sharing .user-time .user-info-article, body .pet .container .article-about-adopt .user-time .user-info-article {
+        display: flex;
+        justify-content: left;
+        align-content: center; }
+        body .pet .container .article-about-sharing .user-time .user-info-article .image-profile, body .pet .container .article-about-adopt .user-time .user-info-article .image-profile {
+          margin-right: 7px;
+          width: 25px;
+          overflow: hidden;
+          border-radius: 50%; }
+          body .pet .container .article-about-sharing .user-time .user-info-article .image-profile img, body .pet .container .article-about-adopt .user-time .user-info-article .image-profile img {
+            width: 100%; }
+    body .pet .container .article-about-sharing .buttons-comment-love, body .pet .container .article-about-adopt .buttons-comment-love {
+      background: #d1d1d1;
+      font-size: 20px; }
+      body .pet .container .article-about-sharing .buttons-comment-love .icon-love, body .pet .container .article-about-sharing .buttons-comment-love .icon-comment, body .pet .container .article-about-adopt .buttons-comment-love .icon-love, body .pet .container .article-about-adopt .buttons-comment-love .icon-comment {
+        transition: all 0.3s ease; }
+      body .pet .container .article-about-sharing .buttons-comment-love .icon-love:hover, body .pet .container .article-about-adopt .buttons-comment-love .icon-love:hover {
+        color: #b61f3f; }
+      body .pet .container .article-about-sharing .buttons-comment-love .icon-comment:hover, body .pet .container .article-about-adopt .buttons-comment-love .icon-comment:hover {
+        color: #6AA899; }
+      body .pet .container .article-about-sharing .buttons-comment-love p, body .pet .container .article-about-adopt .buttons-comment-love p {
+        margin-top: 3px;
+        transition: all 0.3s ease; }
+        body .pet .container .article-about-sharing .buttons-comment-love p:hover, body .pet .container .article-about-adopt .buttons-comment-love p:hover {
+          transform: scale(1.1);
+          cursor: pointer; }
+  body .pet .container .type-sharing {
+    width: 100%;
+    max-height: 400px; }
+    body .pet .container .type-sharing .article-sharing-content-view {
+      width: 100%;
+      display: flex; }
+      body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text, body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing {
+        width: 50%;
+        padding: 10px; }
+      body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text {
+        overflow: scroll; }
+        body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text .title-article {
+          color: #2e2e2e;
+          font-family: "Roboto Slab", serif;
+          margin-bottom: 10px; }
+        body .pet .container .type-sharing .article-sharing-content-view .article-sharing-text p {
+          color: #2e2e2e;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 1px;
+          text-align: left; }
+      body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing {
+        display: flex;
+        justify-items: center;
+        align-items: center; }
+        body .pet .container .type-sharing .article-sharing-content-view .image-article-sharing img {
+          display: inline-block;
+          width: 98%;
+          border-radius: 7px;
+          max-height: 300px; }
+  body .pet .container .type-adopt {
+    width: 100%; }
+    body .pet .container .type-adopt .article-about-adopt {
+      width: 100%;
+      flex-wrap: wrap; }
+      body .pet .container .type-adopt .article-about-adopt .user-time, body .pet .container .type-adopt .article-about-adopt .buttons-comment-love {
+        width: 100%; }
+      body .pet .container .type-adopt .article-about-adopt .buttons-comment-love {
+        padding: 7px 25px; }
+    body .pet .container .type-adopt .article-adop-content-view {
+      display: flex;
+      width: 100%; }
+      body .pet .container .type-adopt .article-adop-content-view .about-pet, body .pet .container .type-adopt .article-adop-content-view .image-reasons {
+        width: 50%; }
+      body .pet .container .type-adopt .article-adop-content-view .about-pet {
+        background: #2e2e2e;
+        color: #f0f0f0;
+        padding: 10px; }
+        body .pet .container .type-adopt .article-adop-content-view .about-pet .name-pet {
+          font-family: "Roboto Slab", serif;
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 7px; }
+        body .pet .container .type-adopt .article-adop-content-view .about-pet .about-pet {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          line-height: 18px;
+          letter-spacing: 1px;
+          font-size: 12px;
+          font-family: "Source Sans Pro", sans-serif; }
+      body .pet .container .type-adopt .article-adop-content-view .image-reasons .image-pet img {
+        width: 100%; }
+      body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons {
+        padding: 10px;
+        color: #2e2e2e; }
+        body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons h5 {
+          font-family: "Roboto Slab", serif;
+          font-size: 16px;
+          margin-bottom: 7px; }
+        body .pet .container .type-adopt .article-adop-content-view .image-reasons .reasons p {
+          margin: 0;
+          padding: 0;
+          line-height: 16px;
+          letter-spacing: 1px;
+          font-size: 12px;
+          font-family: "Source Sans Pro", sans-serif; }
+    body .pet .container .type-adopt .state-pet {
+      padding: 8px 0px;
+      background: #969696; }
+      body .pet .container .type-adopt .state-pet h6 {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center; }
+    body .pet .container .type-adopt .get-pet {
+      border: 2px solid #b61f3f;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      overflow: hidden; }
+      body .pet .container .type-adopt .get-pet a {
+        transition: all 0.3s ease;
+        padding: 12px 16px;
+        background: #b61f3f;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Source Sans Pro", sans-serif; }
+        body .pet .container .type-adopt .get-pet a i {
+          color: #3E8C8C; }
+      body .pet .container .type-adopt .get-pet:hover {
+        border: 2px solid #3E8C8C; }
+        body .pet .container .type-adopt .get-pet:hover a {
+          background: #9DC6C9;
+          display: block;
+          text-decoration: underline;
+          color: #A67291; }
+  body .pet .container .pet-page {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 75%;
+    margin: auto; }
+
+@media screen and (max-width: 1300px) {
+  body header .navigation .buscador input[type="search"] {
+    width: 300px; }
+  body main .info {
+    display: none; }
+  body main .main-of-page, body main .container {
+    position: static !important;
+    margin: auto;
+    margin-top: 116px;
+    margin-bottom: 30px; }
+    body main .main-of-page .articles, body main .main-of-page .pet-page, body main .container .articles, body main .container .pet-page {
+      width: 85%; } }
+@media screen and (max-width: 1000px) {
+  body {
+    margin-bottom: 80px; }
+
+  .navegacion-movil > .buttons-navigation {
+    padding-left: 0px !important;
+    border-top: 3px solid #A67291;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    .navegacion-movil > .buttons-navigation li {
+      border-bottom: 3px solid #D98292;
+      width: 15%;
+      margin-left: 0px; }
+      .navegacion-movil > .buttons-navigation li a {
+        color: #A67291;
+        padding: 10px; }
+        .navegacion-movil > .buttons-navigation li a .icon-button {
+          font-size: 25px;
+          color: #3E8C8C; }
+        .navegacion-movil > .buttons-navigation li a .text-button {
+          display: none; }
+
+  header .navigation {
+    justify-content: space-around !important; }
+    header .navigation .buttons-navigation {
+      display: none !important; }
+
+  .pet .pet-page .about-pet, .pet .pet-page .image-contact {
+    width: 100% !important; } }
+@media screen and (max-width: 1550px) {
+  .articles, .pet-page {
+    width: 90%; } }
+@media screen and (max-width: 768px) {
+  body header .navigation {
+    display: flex;
+    flex-direction: column; }
+    body header .navigation .logo a img {
+      height: 35px; }
+    body header .navigation .logo a .letters-logo h1 {
+      font-size: 28px; }
+    body header .navigation .logo a .letters-logo h2 {
+      display: none !important; }
+    body header .navigation .buscador {
+      margin-top: 7px; }
+      body header .navigation .buscador input[type="search"] {
+        width: 80%;
+        padding: 1px 7px; }
+  body main .articles, body main .container {
+    width: 90%; }
+    body main .articles .article-about-sharing, body main .articles .article-about-adopt, body main .container .article-about-sharing, body main .container .article-about-adopt {
+      width: 100% !important;
+      flex-wrap: wrap !important; }
+      body main .articles .article-about-sharing .user-time, body main .articles .article-about-sharing .buttons-comment-love, body main .articles .article-about-adopt .user-time, body main .articles .article-about-adopt .buttons-comment-love, body main .container .article-about-sharing .user-time, body main .container .article-about-sharing .buttons-comment-love, body main .container .article-about-adopt .user-time, body main .container .article-about-adopt .buttons-comment-love {
+        width: 100% !important; }
+    body main .articles .type-sharing, body main .container .type-sharing {
+      max-height: 100% !important; }
+      body main .articles .type-sharing .article-sharing-content-view, body main .container .type-sharing .article-sharing-content-view {
+        flex-direction: column !important; }
+        body main .articles .type-sharing .article-sharing-content-view .article-sharing-text, body main .articles .type-sharing .article-sharing-content-view .image-article-sharing, body main .container .type-sharing .article-sharing-content-view .article-sharing-text, body main .container .type-sharing .article-sharing-content-view .image-article-sharing {
+          overflow: hidden !important;
+          width: 95% !important;
+          padding: 10px; }
+    body main .articles .type-adopt, body main .container .type-adopt {
+      width: 100% !important; }
+
+  .image-article-sharing {
+    border-radius: 0px !important; }
+    .image-article-sharing img {
+      border-radius: 0px !important; } }
+@media screen and (max-width: 576px) {
+  .articles, .container {
+    width: 100% !important; }
+    .articles .type-sharing, .articles .type-adopt, .container .type-sharing, .container .type-adopt {
+      border-radius: 0px !important; }
+      .articles .type-sharing .get-pet, .articles .type-adopt .get-pet, .container .type-sharing .get-pet, .container .type-adopt .get-pet {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important; }
+
+  .image-article-sharing img {
+    width: 100% !important; } }
+.pet .pet-page {
+  margin-bottom: 30px !important; }
+  .pet .pet-page * {
+    box-sizing: border-box !important;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px !important;
+    letter-spacing: 1px; }
+  .pet .pet-page .article-adop-content-view {
+    display: flex;
+    flex-wrap: wrap; }
+    .pet .pet-page .article-adop-content-view .image-contact, .pet .pet-page .article-adop-content-view .about-pet {
+      width: 50%; }
+    .pet .pet-page .article-adop-content-view .about-pet .pet-info, .pet .pet-page .article-adop-content-view .about-pet .info-block {
+      line-height: 18px !important;
+      margin-bottom: 14px; }
+      .pet .pet-page .article-adop-content-view .about-pet .pet-info .name-pet, .pet .pet-page .article-adop-content-view .about-pet .info-block .name-pet {
+        text-decoration: underline; }
+    .pet .pet-page .article-adop-content-view h4, .pet .pet-page .article-adop-content-view h5 {
+      font-size: 20px !important;
+      margin-bottom: 10px; }
+    .pet .pet-page .article-adop-content-view .contacto {
+      width: 100%;
+      padding: 10px;
+      background: #9DC6C9;
+      color: black; }
+    .pet .pet-page .article-adop-content-view .image-pet {
+      width: 100%; }
+      .pet .pet-page .article-adop-content-view .image-pet img {
+        width: 100%; }
+.pet .adopt-form {
+  background: #D98292 !important; }
+  .pet .adopt-form * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  .pet .adopt-form .title-get {
+    padding: 10px;
+    text-align: center;
+    font-size: 22px !important;
+    color: white;
+    width: 100%;
+    font-family: "Roboto Slab", serif;
+    background: #b61f3f; }
+  .pet .adopt-form .formulario {
+    width: 100%;
+    padding: 40px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .pet .adopt-form .formulario input, .pet .adopt-form .formulario textarea, .pet .adopt-form .formulario .casa, .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos, .pet .adopt-form .formulario .renta, .pet .adopt-form .formulario .foto, .pet .adopt-form .formulario .nacimiento, .pet .adopt-form .formulario .terminos {
+      color: #000000 !important;
+      margin: auto;
+      font-weight: 600;
+      margin-bottom: 50px;
+      width: 80%; }
+    .pet .adopt-form .formulario input, .pet .adopt-form .formulario textarea, .pet .adopt-form .formulario label, .pet .adopt-form .formulario option, .pet .adopt-form .formulario select {
+      font-size: 18px !important; }
+    .pet .adopt-form .formulario input, .pet .adopt-form .formulario textarea, .pet .adopt-form .formulario select {
+      /* if not supported, Javascript should add class */
+      /* Mozilla Firefox 4 to 18 */
+      /* Mozilla Firefox 19+ */
+      /* WebKit browsers */
+      /* Internet Explorer 10+ */
+      /* browsers with full support for placeholder styling */
+      opacity: 0.8;
+      text-align: center;
+      border: none;
+      border-bottom: 3px solid #3E8C8C;
+      background: #A67291;
+      padding: 10px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px; }
+      .pet .adopt-form .formulario input.placeholder, .pet .adopt-form .formulario textarea.placeholder, .pet .adopt-form .formulario select.placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input:-moz-placeholder, .pet .adopt-form .formulario textarea:-moz-placeholder, .pet .adopt-form .formulario select:-moz-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input::-moz-placeholder, .pet .adopt-form .formulario textarea::-moz-placeholder, .pet .adopt-form .formulario select::-moz-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input::-webkit-input-placeholder, .pet .adopt-form .formulario textarea::-webkit-input-placeholder, .pet .adopt-form .formulario select::-webkit-input-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input:-ms-input-placeholder, .pet .adopt-form .formulario textarea:-ms-input-placeholder, .pet .adopt-form .formulario select:-ms-input-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input::input-placeholder, .pet .adopt-form .formulario textarea::input-placeholder, .pet .adopt-form .formulario select::input-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input:input-placeholder, .pet .adopt-form .formulario textarea:input-placeholder, .pet .adopt-form .formulario select:input-placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input::placeholder, .pet .adopt-form .formulario textarea::placeholder, .pet .adopt-form .formulario select::placeholder {
+        color: #000; }
+      .pet .adopt-form .formulario input:placeholder, .pet .adopt-form .formulario textarea:placeholder, .pet .adopt-form .formulario select:placeholder {
+        color: #000; }
+    .pet .adopt-form .formulario .casa, .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos, .pet .adopt-form .formulario .renta {
+      display: flex;
+      align-items: center;
+      justify-content: left; }
+      .pet .adopt-form .formulario .casa > label, .pet .adopt-form .formulario .patio > label, .pet .adopt-form .formulario .animales > label, .pet .adopt-form .formulario .ninos > label, .pet .adopt-form .formulario .renta > label {
+        margin-right: 20px; }
+    .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos {
+      border-top: 2px dashed #9DC6C9;
+      padding-top: 20px;
+      border-bottom: 2px dashed #9DC6C9;
+      flex-wrap: wrap; }
+      .pet .adopt-form .formulario .animales > input, .pet .adopt-form .formulario .ninos > input {
+        margin-bottom: 15px;
+        margin-top: 30px;
+        width: 100%; }
+    .pet .adopt-form .formulario .patio, .pet .adopt-form .formulario .animales, .pet .adopt-form .formulario .ninos {
+      justify-content: left; }
+      .pet .adopt-form .formulario .patio > .opciones > label, .pet .adopt-form .formulario .animales > .opciones > label, .pet .adopt-form .formulario .ninos > .opciones > label {
+        background: #9DC6C9;
+        padding: 7px 15px;
+        opacity: 0.4; }
+        .pet .adopt-form .formulario .patio > .opciones > label:hover, .pet .adopt-form .formulario .animales > .opciones > label:hover, .pet .adopt-form .formulario .ninos > .opciones > label:hover {
+          cursor: pointer;
+          opacity: 1; }
+      .pet .adopt-form .formulario .patio > .opciones > input[type="radio"], .pet .adopt-form .formulario .animales > .opciones > input[type="radio"], .pet .adopt-form .formulario .ninos > .opciones > input[type="radio"] {
+        display: none; }
+        .pet .adopt-form .formulario .patio > .opciones > input[type="radio"]:checked + label, .pet .adopt-form .formulario .animales > .opciones > input[type="radio"]:checked + label, .pet .adopt-form .formulario .ninos > .opciones > input[type="radio"]:checked + label {
+          opacity: 1;
+          background: #b61f3f; }
+      .pet .adopt-form .formulario .patio > .opciones > label[for="si"], .pet .adopt-form .formulario .patio > .opciones label[for="si-ani"], .pet .adopt-form .formulario .patio > .opciones label[for="si-ni"], .pet .adopt-form .formulario .animales > .opciones > label[for="si"], .pet .adopt-form .formulario .animales > .opciones label[for="si-ani"], .pet .adopt-form .formulario .animales > .opciones label[for="si-ni"], .pet .adopt-form .formulario .ninos > .opciones > label[for="si"], .pet .adopt-form .formulario .ninos > .opciones label[for="si-ani"], .pet .adopt-form .formulario .ninos > .opciones label[for="si-ni"] {
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px; }
+      .pet .adopt-form .formulario .patio > .opciones > label[for="no"], .pet .adopt-form .formulario .patio > .opciones label[for="no-ani"], .pet .adopt-form .formulario .patio > .opciones label[for="no-ni"], .pet .adopt-form .formulario .animales > .opciones > label[for="no"], .pet .adopt-form .formulario .animales > .opciones label[for="no-ani"], .pet .adopt-form .formulario .animales > .opciones label[for="no-ni"], .pet .adopt-form .formulario .ninos > .opciones > label[for="no"], .pet .adopt-form .formulario .ninos > .opciones label[for="no-ani"], .pet .adopt-form .formulario .ninos > .opciones label[for="no-ni"] {
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 7px; }
+    .pet .adopt-form .formulario .foto > input, .pet .adopt-form .formulario .nacimiento > input {
+      margin-top: 15px;
+      margin-bottom: 0px; }
+    .pet .adopt-form .formulario .terminos, .pet .adopt-form .formulario .nacimiento, .pet .adopt-form .formulario .foto {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .pet .adopt-form .formulario .terminos > input, .pet .adopt-form .formulario .nacimiento > input, .pet .adopt-form .formulario .foto > input {
+        width: 100%; }
+    .pet .adopt-form .formulario .terminos > input[type="checkbox"] {
+      display: none; }
+      .pet .adopt-form .formulario .terminos > input[type="checkbox"]:checked + label {
+        cursor: pointer; }
+      .pet .adopt-form .formulario .terminos > input[type="checkbox"]:checked + label::before {
+        content: "✔";
+        font-size: 20px;
+        color: #3E8C8C; }
+    .pet .adopt-form .formulario .terminos > label {
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .pet .adopt-form .formulario .terminos > label::before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        background: white;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        border: 2px solid #3E8C8C; }
+    .pet .adopt-form .formulario input[type="submit"] {
+      background: #3E8C8C;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      border: 5px solid #3E8C8C;
+      border-top: 5px solid #b61f3f;
+      transition: all 0.3s ease; }
+      .pet .adopt-form .formulario input[type="submit"]:hover {
+        text-decoration: underline;
+        border: 5px solid #b61f3f;
+        border-top: 5px solid #3E8C8C;
+        cursor: pointer;
+        color: black !important; }
+
+main .main-of-page > .edit-user {
+  background: #fff !important; }
+
+/*# sourceMappingURL=master.css.map */

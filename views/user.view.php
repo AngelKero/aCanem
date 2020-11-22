@@ -7,7 +7,8 @@
     <main>
         <?php include_once "userInfo.view.php"; ?>
         <section class="main-of-page">
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="edit-user">
+                <h5>Edita tu perfil</h5>
                 <?php if(!empty($errores)): ?>
                     <div class="error">
                         <ul>
@@ -28,9 +29,7 @@
                         <option value="Fundacion">Fundacion</option>
                     </select>
                 </div>
-                <p>
-                    <--Domicilio-->
-                </p>
+                <p>Domicilio</p>
                 <label for="estado">Estado de la republica:</label>
                 <input type="text" name="estado" id="estado" value="<?php echo $user[0]['estado'] ?>">
                 <label for="ciudad">Ciudad o municipio:</label>
