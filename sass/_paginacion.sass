@@ -1,0 +1,29 @@
+.paginacion
+    width: 100%
+    margin-bottom: 25px !important
+    ul
+        list-style: none
+        display: block
+        text-align: center
+        li
+            margin: 0px 15px !important
+            display: inline-block
+            color: black
+            font-size: 26px
+            background: $color-2-hex
+            padding: 5px 13px !important
+            &:hover
+                background: $color-1-hex
+            a
+                text-decoration: none
+                color: white
+        .active
+            color: white
+            background: $color-4-hex
+            &:hover
+                background: $color-4-hex
+        .disabled
+            color: black
+            background: $color-3-hex
+            &:hover
+                background: $color-3-hex

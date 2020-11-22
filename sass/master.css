@@ -1848,4 +1848,51 @@ body .pet .container .pet-page {
   border-bottom-right-radius: 7px;
   border-top-right-radius: 7px;
 }
+
+.paginacion {
+  width: 100%;
+  margin-bottom: 25px !important;
+}
+
+.paginacion ul {
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+.paginacion ul li {
+  margin: 0px 15px !important;
+  display: inline-block;
+  color: black;
+  font-size: 26px;
+  background: #A67291;
+  padding: 5px 13px !important;
+}
+
+.paginacion ul li:hover {
+  background: #D98292;
+}
+
+.paginacion ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.paginacion ul .active {
+  color: white;
+  background: #3E8C8C;
+}
+
+.paginacion ul .active:hover {
+  background: #3E8C8C;
+}
+
+.paginacion ul .disabled {
+  color: black;
+  background: #9DC6C9;
+}
+
+.paginacion ul .disabled:hover {
+  background: #9DC6C9;
+}
 /*# sourceMappingURL=master.css.map */

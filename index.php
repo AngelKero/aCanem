@@ -19,6 +19,10 @@ $filasMascotas = contar_filas($conexion);
 $filasTotales = $filasArticulos + $filasMascotas;
 $paginas = numero_paginas($filasTotales, $home_config['postTotales']);
 
+if ($filasArticulos > count($articulos) or $filasMascotas > count($mascotas)) {
+    $paginas++;
+}
+
 if (empty($mascotas) and empty($articulos)) {
     $empty = true;
 }else{$empty = false;}
