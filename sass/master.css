@@ -328,6 +328,89 @@ body main .main-of-page {
   top: 90px;
 }
 
+body main .main-of-page .publish-article {
+  width: 75%;
+  margin: auto;
+}
+
+body main .main-of-page .publish-article h4 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+body main .main-of-page .publish-article h4 span {
+  color: red;
+}
+
+body main .main-of-page .publish-article .buttons-publish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+body main .main-of-page .publish-article .buttons-publish .button {
+  margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: white;
+  padding: 10px 18px;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 4px white;
+  border-radius: 7px;
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-article {
+  -webkit-box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 10px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 10px 3px rgba(0, 0, 0, 0.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #A67291), to(#D98292));
+  background-image: linear-gradient(#A67291 10%, #D98292 100%);
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-article:hover, body main .main-of-page .publish-article .buttons-publish .button-article:focus {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #D98292), to(#A67291));
+  background-image: linear-gradient(#D98292 10%, #A67291 100%);
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-article:active {
+  -webkit-transition: all .01s ease;
+  transition: all .01s ease;
+  -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-pet {
+  -webkit-box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 10px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 1px 1px rgba(255, 255, 255, 0.5) inset, 0 0 10px 3px rgba(0, 0, 0, 0.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9DC6C9), to(#3E8C8C));
+  background-image: linear-gradient(#9DC6C9 10%, #3E8C8C 100%);
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-pet:hover, body main .main-of-page .publish-article .buttons-publish .button-pet:focus {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #3E8C8C), to(#9DC6C9));
+  background-image: linear-gradient(#3E8C8C 10%, #9DC6C9 100%);
+}
+
+body main .main-of-page .publish-article .buttons-publish .button-pet:active {
+  -webkit-transition: all .01s ease;
+  transition: all .01s ease;
+  -webkit-box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 3px 5px 3px #00000080 inset, 0 0 5px 1px rgba(0, 0, 0, 0.28);
+}
+
 body main .main-of-page .articles {
   font-family: "Source Sans Pro", sans-serif;
   width: 75%;
@@ -1436,7 +1519,7 @@ body .pet .container .pet-page {
   color: black !important;
 }
 
-.main-of-page .edit-user {
+.main-of-page > .edit-user {
   width: 75%;
   margin: auto;
   padding: 15px;
@@ -1447,7 +1530,7 @@ body .pet .container .pet-page {
   margin-bottom: 50px;
 }
 
-.main-of-page .edit-user > * {
+.main-of-page > .edit-user > * {
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
   margin-bottom: 15px;
@@ -1455,7 +1538,7 @@ body .pet .container .pet-page {
           box-sizing: border-box;
 }
 
-.main-of-page .edit-user > h5 {
+.main-of-page > .edit-user > h5 {
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -1465,25 +1548,25 @@ body .pet .container .pet-page {
   margin-bottom: 15px;
 }
 
-.main-of-page .edit-user > input, .main-of-page .edit-user select {
+.main-of-page > .edit-user > input, .main-of-page > .edit-user select {
   font-weight: 300;
   border: none;
 }
 
-.main-of-page .edit-user p {
+.main-of-page > .edit-user p {
   text-align: center;
   font-size: 30px;
   margin-left: -160px;
 }
 
-.main-of-page .edit-user label {
+.main-of-page > .edit-user label {
   display: inline-block;
   margin-right: 15px;
   text-align: right;
   width: 40%;
 }
 
-.main-of-page .edit-user input, .main-of-page .edit-user select {
+.main-of-page > .edit-user input, .main-of-page > .edit-user select {
   display: inline-block;
   width: 40%;
   background: #6AA899;
@@ -1495,11 +1578,11 @@ body .pet .container .pet-page {
   border-top-right-radius: 7px;
 }
 
-.main-of-page .edit-user input:focus, .main-of-page .edit-user select:focus {
+.main-of-page > .edit-user input:focus, .main-of-page > .edit-user select:focus {
   background: #D98292;
 }
 
-.main-of-page .edit-user input[type="submit"] {
+.main-of-page > .edit-user input[type="submit"] {
   background: #A67291;
   border: none;
   border-radius: 0px;
@@ -1513,7 +1596,7 @@ body .pet .container .pet-page {
   border-top: 6px solid #6AA899;
 }
 
-.main-of-page .edit-user input[type="submit"]:hover {
+.main-of-page > .edit-user input[type="submit"]:hover {
   background: #6AA899;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -1524,7 +1607,7 @@ body .pet .container .pet-page {
           transform: scaleX(1.1);
 }
 
-.main-of-page .edit-user .error {
+.main-of-page > .edit-user .error {
   width: 100%;
   background: #b61f3f;
   color: white;

@@ -8,6 +8,11 @@
         <?php include_once "userInfo.view.php"; ?>
         <section class="main-of-page">
             <div class="publish-article">
+                <h4>Publica algo o da en adopcion <span>❤</span></h4>
+                <div class="buttons-publish">
+                    <a href="#" class="button button-article">🖥Publicar algo📱</a>
+                    <a href="#" class="button button-pet">🐾Dar en adopcion🦴</a>
+                </div>
             </div>
             <div class="filters">
             </div>
