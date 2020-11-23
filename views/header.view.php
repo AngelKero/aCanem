@@ -23,7 +23,7 @@
                 </a>
             </li>
             <li class="button-messages">
-                <a href="<?php echo isset($_SESSION['usuario']) ? '#' : 'login.php'; ?>">
+                <a href="<?php echo isset($_SESSION['usuario']) ? 'mensajes.php' : 'login.php'; ?>">
                     <p class="icon-button"><i class="fas fa-inbox"></i></p>
                     <p class="text-button">Mensajes</p>
                 </a>
@@ -39,6 +39,9 @@
                     <p class="icon-button"><i class="fas fa-bars"></i></p>
                     <p class="text-button">Mas opciones</p>
                 </a>
+                <ul>
+                    <li><a href="cerrar.php">Cerrar Sesion</a></li>
+                </ul>
             </li>
         </ul>
     </nav>

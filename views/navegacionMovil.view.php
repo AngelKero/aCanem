@@ -11,7 +11,7 @@
             </a>
         </li>
         <li class="button-messages">
-            <a href="<?php echo isset($_SESSION['usuario']) ? '#' : 'login.php'; ?>">
+            <a href="<?php echo isset($_SESSION['usuario']) ? 'mensajes.php' : 'login.php'; ?>">
                 <p class="icon-button"><i class="fas fa-inbox"></i></p>
             </a>
         </li>

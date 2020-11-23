@@ -30,9 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //Se enviaron datos por post
 		#Se guarda el resultado
 		$resultado = $statement->fetch();
 		
-		echo '<pre>';
-		print_r($resultado);
-		echo '</pre>';
+		// echo '<pre>';
+		// print_r($resultado);
+		// echo '</pre>';
 
 		#Si no devolvio algo se crea la sesion
 		if ($resultado != false) {
