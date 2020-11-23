@@ -1647,22 +1647,22 @@ body .pet .container .pet-page {
 }
 
 @media screen and (max-width: 576px) {
-  .main-of-page .edit-user {
+  .main-of-page .edit-user, .main-of-page .lista-peticiones {
     width: 100%;
   }
-  .main-of-page .edit-user label {
+  .main-of-page .edit-user label, .main-of-page .lista-peticiones label {
     display: block;
     margin: auto;
     width: 80%;
     text-align: center;
   }
-  .main-of-page .edit-user input, .main-of-page .edit-user select {
+  .main-of-page .edit-user input, .main-of-page .edit-user select, .main-of-page .lista-peticiones input, .main-of-page .lista-peticiones select {
     display: block;
     margin: auto;
     width: 80%;
     text-align: center;
   }
-  .main-of-page .edit-user p {
+  .main-of-page .edit-user p, .main-of-page .lista-peticiones p {
     margin-left: 0px;
     text-align: center;
   }
@@ -1927,6 +1927,7 @@ body .pet .container .pet-page {
   margin: auto;
   margin-bottom: 25px;
   padding: 15px;
+  overflow-x: scroll;
   border-radius: 7px;
   -webkit-box-shadow: 0px 0px 10px 3px #000000a1;
           box-shadow: 0px 0px 10px 3px #000000a1;
@@ -1955,5 +1956,11 @@ body .pet .container .pet-page {
 
 .lista-peticiones table td {
   background: rgba(157, 198, 201, 0.7);
+}
+
+@media screen and (max-width: 576px) {
+  .main-of-page .lista-peticiones {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=master.css.map */
