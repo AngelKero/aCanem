@@ -24,16 +24,25 @@
                                 <span style="font-weight: bolder;">Tipo</span> | <?php echo $articulo['tipo'] ?> <br>
                                 <span style="font-weight: bolder;">Raza</span> | <?php echo $articulo['raza'] ?> <br>
                                 <span style="font-weight: bolder;">Peso</span> | <?php echo $articulo['peso'] ?> <br>
-                                <span style="font-weight: bolder;">Tamaño</span> | <?php echo $articulo['tamano'] ?> <br>
-                                <span style="font-weight: bolder;">Edad</span> | <?php echo $articulo['edad'] ?> <br><br>
-                                <span style="font-weight: bolder;">Sociable con Perros</span> | <?php echo $articulo['mascotas'] ?> <br>
-                                <span style="font-weight: bolder;">Sociable con Niños</span> | <?php echo $articulo['ninos'] ?> <br><br>
-                                <span style="font-weight: bolder;">Nivel de ejercicio</span> | <?php echo $articulo['ejercicio'] ?> <br>
-                                <span style="font-weight: bolder;">Energia</span> | <?php echo $articulo['energia'] ?> <br>
-                                <span style="font-weight: bolder;">Espacio Requerido</span> | <?php echo $articulo['raza'] ?> <br><br>
+                                <span style="font-weight: bolder;">Tamaño</span> | <?php echo $articulo['tamano'] ?>
+                                <br>
+                                <span style="font-weight: bolder;">Edad</span> | <?php echo $articulo['edad'] ?>
+                                <br><br>
+                                <span style="font-weight: bolder;">Sociable con Perros</span> |
+                                <?php echo $articulo['mascotas'] ?> <br>
+                                <span style="font-weight: bolder;">Sociable con Niños</span> |
+                                <?php echo $articulo['ninos'] ?> <br><br>
+                                <span style="font-weight: bolder;">Nivel de ejercicio</span> |
+                                <?php echo $articulo['ejercicio'] ?> <br>
+                                <span style="font-weight: bolder;">Energia</span> | <?php echo $articulo['energia'] ?>
+                                <br>
+                                <span style="font-weight: bolder;">Espacio Requerido</span> |
+                                <?php echo $articulo['raza'] ?> <br><br>
                                 <span style="font-weight: bolder;">Sexo</span> | <?php echo $articulo['sexo'] ?> <br>
-                                <span style="font-weight: bolder;">Esterilizado</span> | <?php echo $articulo['esterelizado'] ?> <br>
-                                <span style="font-weight: bolder;">Desparasitado</span> | <?php echo $articulo['desparazitado'] ?>
+                                <span style="font-weight: bolder;">Esterilizado</span> |
+                                <?php echo $articulo['esterelizado'] ?> <br>
+                                <span style="font-weight: bolder;">Desparasitado</span> |
+                                <?php echo $articulo['desparazitado'] ?>
                             </p>
                         </div>
                     </div>
@@ -46,7 +55,8 @@
                         <h5>Mi dueño: <i class="fas fa-user"></i></h5>
                         <p>
                             <span style="font-weight: bolder;">Nombre</span> | <?php echo $dueño['username'] ?> <br><br>
-                            <span style="font-weight: bolder;">Causa</span> | <?php echo $dueño['tipoCuenta'] ?> <br><br>
+                            <span style="font-weight: bolder;">Causa</span> | <?php echo $dueño['tipoCuenta'] ?>
+                            <br><br>
                             <span style="font-weight: bolder;">Email</span> | <?php echo $dueño['email'] ?> <br><br>
                         </p>
                     </div>
@@ -75,21 +85,29 @@
             </article>
             <article class="pet-page type-adopt adopt-form">
                 <h4 class="title-get">Hazlo tuyo</h4>
-                <form action="" method="post" class="formulario">
-                    <input type="text" name="" id="" placeholder="Ingresa tu nombre" maxlength="100" required><br>
-                    <input type="email" name="" id="" placeholder="Ingresa tu email" maxlength="150" required><br>
-                    <input type="tel" name="" id="" placeholder="Ingresa tu telefono" maxlength="20" required><br>
-                    <textarea name="" id="" cols="30" rows="5"
+                <form action="<?php echo htmlspecialchars('solicitud.php') ?>" method="POST" class="formulario">
+                    <?php if(!empty($errores)): ?>
+                    <div class="error">
+                        <ul>
+                            <?php echo $errores ?>
+                        </ul>
+                    </div>
+                    <?php endif ?>
+                    <input type="text" name="nombre" id="" placeholder="Ingresa tu nombre" maxlength="100" required><br>
+                    <input type="email" name="email" id="" placeholder="Ingresa tu email" maxlength="150" required><br>
+                    <input type="tel" name="telefono" id="" placeholder="Ingresa tu telefono" maxlength="20"
+                        required><br>
+                    <textarea name="razones" id="" cols="30" rows="5"
                         placeholder="¿Cual es la razon por la que quieres adoptar?" required></textarea><br>
 
                     <div class="casa">
                         <label for="casa">Tipo de casa:</label>
-                        <select name="" id="casa" required>
-                            <option value="">Departamento</option>
-                            <option value="">Unifamiliar</option>
-                            <option value="">Plurifamiliar</option>
-                            <option value="">Estudio</option>
-                            <option value="">Duplex</option>
+                        <select name="casa" id="casa" required>
+                            <option value="Departamento">Departamento</option>
+                            <option value="Unifamiliar">Unifamiliar</option>
+                            <option value="Plurifamiliar">Plurifamiliar</option>
+                            <option value="Estudio">Estudio</option>
+                            <option value="Duplex">Duplex</option>
                         </select>
                     </div>
 
@@ -103,7 +121,8 @@
                         </div>
                     </div>
 
-                    <input type="number" name="" id="" placeholder="¿Cuantas personas viven en tu casa" required>
+                    <input type="number" name="personas" id="" placeholder="¿Cuantas personas viven en tu casa"
+                        required>
 
                     <div class="animales">
                         <label for="animales">¿Tienes otros animales en tu casa?</label>
@@ -113,29 +132,29 @@
                             <input type="radio" name="animales" value="no" id="no-ani" checked>
                             <label for="no-ani">No</label>
                         </div>
-                        <input type="text" name="" id="" placeholder="¿Cuales?">
+                        <input type="text" name="who" id="" placeholder="¿Cuales?">
                     </div>
 
-                    <input type="text" name="" id="" placeholder="¿Donde dormira tu nueva mascota?">
+                    <input type="text" name="rincon" id="" placeholder="¿Donde dormira tu nueva mascota?">
 
-                    <input type="text" name="" id="" placeholder="¿Cuanto tiempo pasara solo la nueva mascota?">
+                    <input type="text" name="soledad" id="" placeholder="¿Cuanto tiempo pasara solo la nueva mascota?">
 
                     <div class="ninos">
                         <label for="niños">¿Tienes niños?</label>
                         <div class="opciones">
-                            <input type="radio" name="niños" value="si" id="si-ni">
+                            <input type="radio" name="ninos" value="si" id="si-ni">
                             <label for="si-ni">Si</label>
-                            <input type="radio" name="niños" value="no" id="no-ni" checked>
+                            <input type="radio" name="ninos" value="no" id="no-ni" checked>
                             <label for="no-ni">No</label>
                         </div>
-                        <input type="number" name="" id="" placeholder="¿Cuantos?">
+                        <input type="number" name="howmuch" id="" placeholder="¿Cuantos?">
                     </div>
 
                     <div class="renta">
                         <label for="renta">¿Tienes casa propia?</label>
-                        <select name="" id="renta" required>
-                            <option value="">Rentada</option>
-                            <option value="">Casa Propia</option>
+                        <select name="propiedad" id="renta" required>
+                            <option value="Rentada">Rentada</option>
+                            <option value="Casa Propia">Casa Propia</option>
                         </select>
                     </div>
 
@@ -147,13 +166,24 @@
 
                     <div class="nacimiento">
                         <label for="nacimiento">Fecha de nacimiento</label>
-                        <input type="date" name="" id="nacimiento" required>
+                        <input type="date" name="date" id="nacimiento" required>
                     </div>
 
                     <div class="terminos">
                         <input type="checkbox" name="terminos" value="terminos" id="terminos">
                         <label for="terminos">Acepto terminos y condiciones</label>
                     </div>
+
+                    <input type="hidden" name="solicitante" value="<?php echo $user[0]['id_user'] ?>">
+                    <input type="hidden" name="dueno" value="<?php echo $dueño['id_user'] ?>">
+                    <input type="hidden" name="mascota" value="<?php echo $articulo['id_mascota'] ?>">
+                    <?php if(!empty($errores)): ?>
+                    <div class="error">
+                        <ul>
+                            <?php echo $errores ?>
+                        </ul>
+                    </div>
+                    <?php endif ?>
 
                     <input type="submit" value="Enviar Formulario">
                 </form>
